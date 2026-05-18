@@ -1,0 +1,804 @@
+﻿question_id,category,query_type,question,system,answer,source_preview,human_correctness_1_5,human_completeness_1_5,human_clarity_1_5,human_usefulness_1_5,human_trustworthiness_1_5,human_source_transparency_1_5,hallucination_observed_yes_no,reviewer_comments
+C001,tuition_admissions,multi_source,"If a foreign bachelor applicant from far abroad wants to study Law in English, what tuition fee applies, and what additional visa or medical fees are mentioned?",Baseline RAG,"For a foreign bachelor applicant from far abroad studying Law in English at Al-Farabi Kazakh National University for the 2022-2023 academic year, the tuition fee is **1,900,000 KZT** [Source 1].
+
+The provided context does not contain information regarding additional visa or medical fees.",Source 1: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 2: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 3: tuition_fee_fact | TUITION_FEE_2022-2023.pdf,,,,,,,,
+C001,tuition_admissions,multi_source,"If a foreign bachelor applicant from far abroad wants to study Law in English, what tuition fee applies, and what additional visa or medical fees are mentioned?",Agentic RAG,"Based on the validated context provided:
+
+**Tuition Fee**
+For a foreign bachelor applicant from ""far abroad"" studying Law in English for the 2022-2023 academic year, the tuition fee is **1,900,000 KZT** [Source 1].
+
+**Visa and Medical Fees**
+The available sources do not provide specific monetary values for visa application fees or medical examination fees. However, the following requirements and associated costs are mentioned:
+*   **Medical Examination:** Foreign students are required to undergo a medical examination for diseases listed in the Order of the Minister of Health of the Republic of Kazakhstan (dated September 30, 2011) and provide a medical certificate confirming the absence of such diseases [Source 2].
+*   **Medical Insurance:** Foreign students are required to have medical insurance [Source 2].
+*   **Visa Invitation:** After admission, students must submit an application form to receive an invitation for a study visa (valid for up to one year) [Source 2].
+
+*Note: The specific costs for the medical examination, insurance, and visa invitation are not listed in the provided documents.*",Source 1: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 2: web_page | https://welcome.kaznu.kz/en/17999/page | url=https://welcome.kaznu.kz/en/17999/page || Source 3: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en,,,,,,,,
+C002,tuition_admissions,multi_source,"For an applicant from CIS countries interested in Information Technology bachelor studies in English, what tuition fee applies and what admission-related information is available?",Baseline RAG,"For an applicant from CIS countries interested in Information Technology bachelor studies in English for the 2022-2023 academic year, the tuition fee is **1,700,000 KZT** [Source 1].
+
+The available admission-related information from the provided sources is limited to the specific tuition fee structure for this program, region, degree level, and language combination. No additional details regarding admission requirements, deadlines, or application procedures are included in the retrieved context.",Source 1: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 2: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 3: tuition_fee_fact | TUITION_FEE_2022-2023.pdf,,,,,,,,
+C002,tuition_admissions,multi_source,"For an applicant from CIS countries interested in Information Technology bachelor studies in English, what tuition fee applies and what admission-related information is available?",Agentic RAG,"Based on the validated context, here is the information for an applicant from CIS countries interested in Information Technology bachelor studies in English:
+
+**Tuition Fee**
+*   **Amount:** 1,700,000 KZT
+*   **Applicable Period:** Academic year 2022-2023
+*   **Details:** This fee applies specifically to the Information Technology program at the bachelor level for applicants from CIS countries studying in English [Source 1].
+
+**Admission Information**
+*   **Program Registration:** Admission is conducted for educational programs included in the Register of Educational Programs of the National Center for the Development of Higher Education under the Ministry of Science and Higher Education of the Republic of Kazakhstan [Source 2].
+*   **Foreign Citizens:** The university admits foreign citizens to higher education programs [Source 2].
+*   **Security Requirements:** All participants in the educational process are required to contribute to maintaining the security of the University's information environment, including data protection and infrastructure resilience [Source 2].
+
+*Note: The provided sources do not contain specific admission requirements (such as GPA thresholds, language proficiency scores, or document lists) or tuition fees for academic years other than 2022-2023.*",Source 1: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 2: text | Academic-policy_Академическая политика 2025-2026 (англ).pdf | page=7,,,,,,,,
+C003,tuition_admissions,multi_source,"If a foreign student wants to study Biology and Biotechnology in English as a PhD student, what tuition fee applies and what medical or insurance requirements are mentioned?",Baseline RAG,"Based on the provided context, the tuition fee for a foreign student (far_abroad) studying Biology and Biotechnology as a PhD student in English for the 2022-2023 academic year is **2,804,000 KZT** [Source 1].
+
+The available sources do not contain any information regarding medical or insurance requirements for students.",Source 1: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 2: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 3: tuition_fee_fact | TUITION_FEE_2022-2023.pdf,,,,,,,,
+C003,tuition_admissions,multi_source,"If a foreign student wants to study Biology and Biotechnology in English as a PhD student, what tuition fee applies and what medical or insurance requirements are mentioned?",Agentic RAG,"Based on the validated context for the academic year 2022-2023:
+
+*   **Tuition Fee:** The tuition fee for a PhD student in Biology and Biotechnology studying in English is **2,804,000 KZT**. This rate applies to applicants from ""far abroad"" and the CIS region [Source 1], [Source 2].
+*   **Medical/Insurance Requirements:** The provided sources do not contain information regarding specific medical or insurance requirements for international PhD students.",Source 1: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 2: tuition_fee_fact | TUITION_FEE_2022-2023.pdf,,,,,,,,
+C004,tuition_admissions,constraint_matching,Compare the tuition fee for Law bachelor students from far abroad in English with Law bachelor students from CIS countries in English.,Baseline RAG,"Based on the provided tuition records for the 2022-2023 academic year at Al-Farabi Kazakh National University:
+
+*   **Law Bachelor (Far Abroad, English):** The tuition fee is **1,900,000 KZT** [Source 2].
+*   **Law Bachelor (CIS, English):** The tuition fee is **1,800,000 KZT** [Source 1].
+
+Therefore, the tuition fee for Law bachelor students from far abroad in English is **100,000 KZT higher** than for students from CIS countries in English.",Source 1: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 2: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 3: tuition_fee_fact | TUITION_FEE_2022-2023.pdf,,,,,,,,
+C004,tuition_admissions,constraint_matching,Compare the tuition fee for Law bachelor students from far abroad in English with Law bachelor students from CIS countries in English.,Agentic RAG,"Based on the validated context provided, here is the comparison:
+
+*   **Law Bachelor (English) for students from Far Abroad:** The tuition fee for the 2022-2023 academic year is **1,900,000 KZT** [Source 1].
+*   **Law Bachelor (English) for students from CIS Countries:** The available sources do not provide the tuition fee for this specific group.
+
+Therefore, a direct comparison cannot be made with the current data, as only the fee for ""far abroad"" applicants is available.",Source 1: tuition_fee_fact | TUITION_FEE_2022-2023.pdf,,,,,,,,
+C005,tuition_admissions,constraint_matching,What is the tuition fee difference between Information Technology bachelor students from far abroad and CIS countries when studying in English?,Baseline RAG,"Based on the provided tuition records for the 2022-2023 academic year, the tuition fee difference for Information Technology bachelor students studying in English is **200,000 KZT**.
+
+*   **Far Abroad (English):** 1,900,000 KZT [Source 2]
+*   **CIS Countries (English):** 1,700,000 KZT [Source 1]",Source 1: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 2: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 3: tuition_fee_fact | TUITION_FEE_2022-2023.pdf,,,,,,,,
+C005,tuition_admissions,constraint_matching,What is the tuition fee difference between Information Technology bachelor students from far abroad and CIS countries when studying in English?,Agentic RAG,"Based on the provided validated context, the tuition fee for Information Technology bachelor students from **far abroad** studying in English for the 2022-2023 academic year is **1,900,000 KZT** [Source 1].
+
+The available sources do not provide the tuition fee for Information Technology bachelor students from **CIS countries** studying in English; therefore, a specific fee difference cannot be calculated with the current data.",Source 1: tuition_fee_fact | TUITION_FEE_2022-2023.pdf,,,,,,,,
+C006,tuition_admissions,missing_information,"Does the available information provide the exact total cost for a foreign Law bachelor applicant including tuition, visa fee, medical certificate, HIV test, and insurance?",Baseline RAG,"No, the available information does not provide the exact total cost for a foreign Law bachelor applicant including tuition, visa fee, medical certificate, HIV test, and insurance.
+
+The provided sources only list tuition fees for the 2022-2023 academic year for Law bachelor applicants from ""far_abroad"" regions:
+*   **English language:** 1,900,000 KZT [Source 1]
+*   **Russian language:** 1,800,000 KZT [Source 2]
+*   **Kazakh language:** 1,800,000 KZT [Source 5]
+
+There is no data regarding visa fees, medical certificates, HIV tests, or insurance costs in the retrieved context.",Source 1: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 2: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 3: tuition_fee_fact | TUITION_FEE_2022-2023.pdf,,,,,,,,
+C006,tuition_admissions,missing_information,"Does the available information provide the exact total cost for a foreign Law bachelor applicant including tuition, visa fee, medical certificate, HIV test, and insurance?",Agentic RAG,"Based on the validated context, the available information **does not provide a single exact total cost** for a foreign Law bachelor applicant because the total depends on specific variables (language of instruction and exact visa fee amount) and some costs are given as ranges or estimates.
+
+Here is the breakdown of the available cost components:
+
+*   **Tuition Fee:** The exact amount varies by language of instruction for foreign applicants (far_abroad region) in the 2022-2023 academic year:
+    *   **English:** 1,900,000 KZT [Source 2]
+    *   **Russian:** 1,800,000 KZT [Source 3]
+    *   **Kazakh:** 1,800,000 KZT [Source 5]
+*   **Medical Certificate and HIV Test:** The cost is stated as **""from 4,500 KZT""** [Source 1]. An exact total cannot be calculated without knowing the specific price charged by the applicant's chosen provider.
+*   **Visa Fee:** The document lists the fee as **""2,000 KZT (0.5 MCR)""** [Source 1]. However, this figure is extremely low compared to standard international visa fees and may represent a specific administrative charge or a partial fee rather than the full consular fee, making the ""exact total"" uncertain without external verification.
+*   **Insurance:** The provided context **does not contain any information** regarding the cost of insurance for applicants [Source 1-5].
+
+**Conclusion:**
+It is impossible to calculate an exact total sum from the provided documents because the medical test cost is a minimum range, the insurance cost is missing, and the visa fee listed appears to be a specific administrative charge rather than the full visa cost. The tuition fee is the only component with an exact, fixed value depending on the language chosen.",Source 1: text | TUITION_FEE_2022-2023.pdf | page=2 || Source 2: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 3: tuition_fee_fact | TUITION_FEE_2022-2023.pdf,,,,,,,,
+C007,academic_policy,multi_hop,"If a student takes academic leave and later returns, how are they reinstated and how are academic differences handled?",Baseline RAG,"When a student returns from academic leave, they are reinstated into the student body and registered for the academic disciplines of the corresponding course of study in the current curriculum [Source 3, Source 5].
+
+**Handling Academic Differences:**
+*   **Registration:** Students register for the disciplines that constitute the ""academic difference"" (changes in the working curricula) and study them during the first year after returning, either with current study groups or as part of an additional semester [Source 3].
+*   **Cost:** Students are given a **one-time opportunity** to study these disciplines **free of charge** until the end of the academic year [Source 3, Source 4, Source 5].
+*   **Consequences of Non-Completion:** Any disciplines from the academic difference that are not completed by the end of the academic year are transferred to **academic debt**. These must then be resolved exclusively on a **paid basis** [Source 3, Source 4, Source 5].
+*   **Scholarships:** State scholarships for students on an educational grant are assigned based on the results of an intermediate certification of the first academic period after returning, provided there is **complete elimination of the academic difference** [Source 2, Source 4].
+
+**General Reinstatement Criteria:**
+*   The year of further study is determined based on prerequisites and the presence or absence of academic differences [Source 1].
+*   Students may be reinstated after expulsion only if they have fully and successfully completed the first academic period of their program in accordance with the individual curriculum [Source 1].",Source 1: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 2: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en || Source 3: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en,,,,,,,,
+C007,academic_policy,multi_hop,"If a student takes academic leave and later returns, how are they reinstated and how are academic differences handled?",Agentic RAG,"Based on the validated context, here is how students are reinstated and how academic differences are handled after returning from academic leave at Al-Farabi Kazakh National University:
+
+**Reinstatement Process**
+*   **Restoration and Registration:** Upon returning, the student is restored to the student contingent and registered for the academic disciplines corresponding to their current course of study under the current curriculum [Source 4], [Source 6].
+*   **Course Enrollment:** Students register for the disciplines of academic difference alongside their current study groups or as part of an additional semester [Source 4].
+
+**Handling of Academic Differences**
+*   **Free Study Opportunity:** Students are granted a **one-time opportunity** to study the disciplines resulting from the academic difference **free of charge** until the end of the academic year [Source 2], [Source 4], [Source 6].
+*   **Academic Debt:** Any disciplines from the academic difference that are not completed by the end of the academic year (including the summer semester) are transferred to **academic debt**. These must be resolved exclusively on a **paid basis** [Source 2], [Source 3], [Source 4], [Source 6].
+*   **Scholarship Eligibility:** For students on a state educational grant, the assignment of a state scholarship after returning from leave is based on the results of an intermediate certification of the first academic period, contingent upon the **complete elimination of the academic difference** [Source 4], [Source 6].
+*   **Credit Limit:** The academic difference must not exceed **30 academic credits** during reinstatement [Source 1].",Source 1: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 2: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 3: text | Academic-policy_Академическая политика 2025-2026 (англ).pdf | page=22,,,,,,,,
+C008,academic_policy,multi_hop,"If a student participates in academic mobility and returns with academic debt, how are credits transferred and what should the student do?",Baseline RAG,"If a student returns from academic mobility with academic debt, the following procedures apply:
+
+*   **Credit Transfer:** Credits are recalculated by the Registrar's Office based on the student's application and supporting documents submitted by the graduating department, in agreement with the Department of Academic Affairs (DAA). This process is executed within the first three weeks of a semester [Source 2]. The graduating department is responsible for establishing the equivalence of the disciplines studied to the University's curriculum requirements [Source 2].
+*   **Action Required:** The student must apply to the dean of the faculty to study the relevant disciplines according to an individual curriculum and must pass the final exams in the disciplines constituting the academic debt [Source 4].
+*   **Cost Implications:** If the academic difference (debt) is not eliminated during the current academic year (including the summer semester), it is considered academic debt and serves as grounds for transferring the student to a repeated year of study on a paid basis [Source 3]. Repeated study to eliminate such debts is organized by the faculty dean's office [Source 3].",Source 1: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 2: text | Academic-policy_Академическая политика 2025-2026 (англ).pdf | page=24 || Source 3: text | Academic-policy_Академическая политика 2025-2026 (англ).pdf | page=22,,,,,,,,
+C008,academic_policy,multi_hop,"If a student participates in academic mobility and returns with academic debt, how are credits transferred and what should the student do?",Agentic RAG,"Based on the validated context, here is the procedure for students returning from academic mobility with academic debt:
+
+**1. How Credits Are Transferred**
+*   **Process:** Credits are recalculated by the **Registrar's Office** based on the student's application and supporting documents submitted by the graduating department, in agreement with the **Department of Academic Affairs (DAA)** [Source 5].
+*   **Timing:** This process is executed within the **first three weeks of a semester** [Source 5].
+*   **Equivalence:** The graduating department is responsible for objectively establishing the equivalence of the volume and content of the disciplines studied abroad to the University's curriculum requirements [Source 5].
+*   **Scope:** The period of stay and the list of disciplines for study (and subsequent transfer) are determined by the student in agreement with the graduating department, considering the curriculum of the Educational Program (EP) [Source 5].
+
+**2. What the Student Should Do**
+*   **Apply for Individual Curriculum:** Students returning from academic mobility with academic debt must apply to the **Dean of the Faculty** to study the relevant disciplines according to an **individual curriculum** [Source 3].
+*   **Pass Final Exams:** The student must pass the **final exams** in the disciplines constituting the academic debt [Source 3].
+*   **Payment Status:**
+    *   If the student is under a **state educational grant**, repeated or additional study to eliminate academic debt arising from academic mobility is **free of charge** (it is an exception to the paid service rule) [Source 1, Source 2].
+    *   If the student is **not** under a state grant, repeated study is generally carried out on the basis of **paid educational service contracts** [Source 1, Source 2].
+*   **System Registration:** If the student needs to re-learn disciplines, they must submit an application for re-learning in electronic form through the **Univer system** [Source 6].
+*   **Exceeding Permissible Credits:** If the academic debt exceeds the permissible number of credits, the student has the right to study the disciplines in other national Higher Education Institutions (HEIs) with further recharging of credits, provided they register for training in the summer semester [Source 6].",Source 1: text | Academic-policy_Академическая политика 2025-2026 (англ).pdf | page=22 || Source 2: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en || Source 3: text | Academic-policy_Академическая политика 2025-2026 (англ).pdf | page=15,,,,,,,,
+C009,academic_policy,multi_source,"What should a master's student know about thesis publication requirements, plagiarism checking, and final attestation?",Baseline RAG,"Based on the provided context, here is what a master's student at Al-Farabi Kazakh National University needs to know regarding thesis publication, plagiarism checking, and final attestation:
+
+**Thesis Publication Requirements**
+*   **Mandatory Publication:** At least one scientific publication must be published on the topic of the master's thesis no later than 2 weeks before the start of the final certification [Source 3].
+
+**Plagiarism Checking**
+*   **Mandatory Check:** All written works submitted for final attestation, including master's dissertations, must undergo a mandatory plagiarism check in the Univer Information System before the presentation [Source 2, Source 3].
+*   **Procedure:** The specific procedure for conducting the check is determined by the graduating department and the faculty dean's office [Source 1, Source 3].
+*   **Cost and Limits:** Students are entitled to two free plagiarism checks. The third and subsequent checks are carried out on a paid basis [Source 3].
+*   **System Indicators:** The system checks for indicators such as ""Similarity,"" ""Citations,"" ""Originality,"" and ""Text recycling,"" and identifies attempts to disguise similarities or false references [Source 4].
+*   **Consequences:** Violations are recorded in the transcript. Repeated violations are reviewed by the Faculty Ethics Council [Source 2]. Plagiarism includes using someone else's text or ideas without indicating true authorship, using borrowed materials with insufficient references, or making false references [Source 5].
+
+**Final Attestation**
+*   **Defense Conditions:** A student defends the final work only in the presence of a positive review from their supervisor. If the supervisor gives a negative conclusion (""not allowed to defend""), the student does not defend the work and is expelled from the University as not admitted to final certification [Source 1].
+*   **Required Knowledge:** All students must be familiar with the University's Final Examination Rules and Academic Integrity Policy [Source 2].
+*   **Professional Practice:** Professional practice is a mandatory part of studies required to fully complete the educational program. Types include educational, pedagogical, industrial, and pre-diploma (preparation for writing the final thesis) [Source 2].",Source 1: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en || Source 2: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 3: text | Academic-policy_Академическая политика 2025-2026 (англ).pdf | page=26,,,,,,,,
+C009,academic_policy,multi_source,"What should a master's student know about thesis publication requirements, plagiarism checking, and final attestation?",Agentic RAG,"Based on the validated context from NJSC Al-Farabi Kazakh National University's Academic Policy and student guidelines, here is what a master's student must know regarding thesis publication, plagiarism checking, and final attestation:
+
+### 1. Thesis Publication Requirements
+*   **Mandatory Publication:** At least one scientific publication must be published on the topic of the master's thesis [Source 1], [Source 3].
+*   **Timing:** This requirement is part of the conditions for final certification [Source 1].
+*   **Doctoral Distinction:** Note that specific requirements for doctoral dissertations are determined separately by the Rules for awarding degrees, distinct from the master's requirement [Source 1], [Source 3].
+
+### 2. Plagiarism Checking Procedures
+*   **Mandatory System:** All written works submitted for final attestation (including master's dissertations) must undergo a mandatory plagiarism check in the **Univer Information System** before the presentation/defense [Source 2], [Source 6].
+*   **Procedure Authority:** The specific procedure for conducting the check is determined by the graduating department and the faculty dean's office [Source 1], [Source 2].
+*   **Free Checks:** Students are entitled to **two free plagiarism checks**. The third and subsequent checks are carried out on a paid basis [Source 1].
+*   **Definition of Plagiarism:** Plagiarism includes using someone else's text or ideas without indicating true authorship (without references), using borrowed materials with references that question the work's independence, or making false references. It also includes auto-plagiarism (reusing one's own work without citation) [Source 4].
+*   **Consequences:** Information about plagiarism violations is recorded in the student's transcript. Repeated violations are reviewed by the Faculty Ethics Council [Source 6].
+*   **Exams vs. Thesis:** While the Univer system checks for similarity, citations, originality, and text recycling for exams, the specific procedure for non-thesis text documents is determined by the lecturer based on departmental instructions [Source 4].
+
+### 3. Final Attestation Process
+*   **Defense Condition:** A student defends their final work only in the presence of a **positive review from their supervisor** [Source 2].
+*   **Negative Conclusion:** If the supervisor provides a negative conclusion (""not allowed to defend""), the student **does not defend** the work and is expelled from the University as not admitted to final certification [Source 2].
+*   **Exemption Application:** Students with specific circumstances (e.g., special educational needs, pregnancy, participation in international camps) may apply for exemptions from comprehensive exams. This application must be submitted to the Vice-Rector for Academic Affairs with department and faculty dean visas **no later than 2 weeks before the start of the final certification** [Source 3].
+*   **Academic Integrity:** All students must be familiar with the University's Final Examination Rules and Academic Integrity Policy [Source 6].",Source 1: text | Academic-policy_Академическая политика 2025-2026 (англ).pdf | page=26 || Source 2: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en || Source 3: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en,,,,,,,,
+C010,academic_policy,multi_source,"How does the university support graduate employment, and what role does the Office of Professional Development and Career play?",Baseline RAG,"Al-Farabi Kazakh National University supports graduate employment through active collaboration with employers and regular updates to educational programs to meet labor market demands [Source 1, Source 2, Source 4]. The **Office of Professional Development and Career**, part of the Department of Academic Affairs (DAA), plays a central role by:
+
+- Engaging with employers to inform students and graduates about job and internship opportunities [Source 1, Source 2].
+- Organizing annual career fairs with major domestic and international companies [Source 1].
+- Ensuring employer involvement in events to promote employment and professional internships [Source 2, Source 3].
+
+Additionally, faculties maintain ongoing communication with employers through **Employer Councils**, composed of faculty alumni, to identify current skill needs in the job market [Source 1, Source 2, Source 3]. The efficiency of these councils is analyzed by the faculty's Academic Council at least twice a year [Source 2, Source 3].
+
+For graduates receiving government grants, the university directs them either to a workplace or to Career Centers at their place of registration [Source 1]. The university considers successful graduate employment a key indicator of educational effectiveness [Source 2].",Source 1: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 2: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en || Source 3: text | Academic-policy_Академическая политика 2025-2026 (англ).pdf | page=32,,,,,,,,
+C010,academic_policy,multi_source,"How does the university support graduate employment, and what role does the Office of Professional Development and Career play?",Agentic RAG,"Al-Farabi Kazakh National University supports graduate employment through a multi-faceted approach involving direct office operations, faculty-level engagement, and specific initiatives for underrepresented groups.
+
+**Role of the Office of Professional Development and Career**
+The Office of Professional Development and Career, located within the Department of Academic Affairs (DAA), plays a central role in connecting students and graduates with the labor market. Its specific functions include:
+*   **Employer Engagement:** It ensures the involvement of employers in university events to inform students and graduates about job and internship opportunities [Source 1], [Source 2].
+*   **Career Fairs:** The office regularly organizes career fairs annually, featuring participation from major domestic and international companies [Source 2].
+*   **Targeted Support:** For graduates receiving government grants, the university directs them to workplaces or Career Centers at their place of registration [Source 2].
+
+**General University Support Mechanisms**
+Beyond the central office, the university employs several strategies to enhance graduate employability:
+*   **Faculty-Employer Councils:** Each faculty maintains constant communication with employers through ""Councils of Employers,"" which are formed by faculty alumni. These councils help identify current skills needed in the job market, and their efficiency is analyzed by the Academic Council at least twice a year [Source 1], [Source 2], [Source 3].
+*   **Curriculum Updates:** The university actively collaborates with employers to update educational program content in accordance with labor market demands, ensuring graduates possess relevant skills [Source 1], [Source 3], [Source 6].
+*   **Inclusive Employment Initiatives:** The university organizes quarterly events such as job fairs, round tables, and forums specifically for students from the lowest 20% household income group to provide quality employment assistance [Source 5]. Additionally, it assists residents of Almaty city in creating sustainable enterprises through training seminars [Source 5].
+*   **Practical Experience:** The curriculum includes industrial practices, internships, and other training conducted outside the university to acquire practical experience relevant to the student's field [Source 4].
+
+The university considers the successful employment of graduates as the main indicator of the effectiveness of its educational activities [Source 1].",Source 1: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en || Source 2: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 3: text | Academic-policy_Академическая политика 2025-2026 (англ).pdf | page=32,,,,,,,,
+C011,academic_policy,missing_information,"Does the academic policy provide exact deadlines for every stage of final attestation, thesis publication, and plagiarism checking?",Baseline RAG,"Based on the provided context, the academic policy **does not** provide exact deadlines for every stage of final attestation, thesis publication, or plagiarism checking.
+
+*   **Plagiarism Checking:** The policy states that the procedure is determined by the graduating department and the faculty dean's office, and students are entitled to two free checks with subsequent ones being paid, but it does not specify exact dates or times for these checks [Source 1, Source 2].
+*   **Thesis Publication:** For master's theses, the requirement is that ""no later than 2 weeks before the start of the final certification,"" at least one scientific publication must be published. However, specific publication deadlines for doctoral dissertations are determined by the Rules for awarding degrees, not detailed in this policy [Source 2].
+*   **Final Attestation Stages:** While the policy mentions that written works must undergo plagiarism checks ""before the presentation"" and that the doctoral dissertation is tested at stages including the extended department meeting, acceptance for defense, and review by the National Center, it does not list specific calendar dates or exact deadlines for these stages [Source 1, Source 2, Source 4].
+
+The available sources do not provide enough information to confirm exact deadlines for every stage.",Source 1: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en || Source 2: text | Academic-policy_Академическая политика 2025-2026 (англ).pdf | page=26 || Source 3: web_page | https://farabi.university/students/20?lang=en | url=https://farabi.university/students/20?lang=en,,,,,,,,
+C011,academic_policy,missing_information,"Does the academic policy provide exact deadlines for every stage of final attestation, thesis publication, and plagiarism checking?",Agentic RAG,"Based on the validated context, the academic policy **does not provide exact deadlines** for every stage of final attestation, thesis publication, and plagiarism checking. Instead, it specifies procedural requirements and relative timeframes:
+
+*   **Final Atestation:** The policy states that admission to the final attestation and the approval of the work schedule must occur **no later than two weeks before the start of the final attestation** [Source 1], [Source 5]. It does not list specific calendar dates for the defense itself.
+*   **Thesis Publication:** The policy requires that at least one scientific publication on the topic of the master's thesis be published, but it **does not specify an exact deadline** for this publication [Source 1].
+*   **Plagiarism Checking:** The policy mandates that written works undergo mandatory plagiarism checking in the ""Univer"" information system before the defense [Source 1], [Source 3]. However, it **does not provide exact deadlines** for when this check must be completed, noting only that the procedure is determined by the graduating department and faculty dean's office [Source 1], [Source 3].
+
+While the policy mentions that decisions on defense assessments are made on the day they are held [Source 6] and that postponed certifications must be rescheduled by December 31 of the current calendar year [Source 6], it lacks specific dates for the initial stages of the process.",Source 1: text | Academic-policy_Академическая политика 2025-2026 (англ).pdf | page=26 || Source 2: web_page | https://farabi.university/students/25?lang=en | url=https://farabi.university/students/25?lang=en || Source 3: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en,,,,,,,,
+C012,academic_policy,ambiguous,What should a student do if they have problems after returning to study?,Baseline RAG,"If a student has problems after returning to study, the following steps apply based on the provided context:
+
+*   **Reinstatement and Registration:** Upon returning from academic leave, the student is reinstated into the student body and registered for courses [Source 1, Source 3, Source 5].
+*   **Handling Curriculum Differences:** If there is a difference in curricula, the student is given a one-time opportunity to study these courses free of charge until the end of the academic year [Source 3, Source 5].
+*   **Academic Debt:** Any courses from the academic difference that are not completed within the free period are considered academic debt and must be resolved on a paid basis [Source 3, Source 5].
+*   **Scholarship Eligibility:** The assignment of a state scholarship to students returning from academic leave is based on the results of an intermediate certification of the first academic period after return, subject to the complete elimination of the academic difference [Source 4].
+*   **Application Process:** To obtain, extend, or return from academic leave, the student must submit an electronic application in the Univer IS system under the ""E-services"" section and provide required documents to the Student Office or Student Service Center ""Keremet"" [Source 1].
+
+If the student faces issues related to missing classes without a good reason (72+ hours) or excessive academic debt (more than 50%), they may face expulsion [Source 4].",Source 1: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 2: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 3: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en,,,,,,,,
+C012,academic_policy,ambiguous,What should a student do if they have problems after returning to study?,Agentic RAG,"If a student encounters problems after returning to study, specifically regarding academic differences resulting from an academic leave, the following steps apply:
+
+*   **Reinstatement and Registration:** Upon returning, the student is reinstated into the student body and registered for courses [Source 1], [Source 6].
+*   **Handling Academic Differences:**
+    *   The student is given a **one-time opportunity** to study the disciplines of academic difference **free of charge** until the end of the academic year [Source 4], [Source 5].
+    *   If the student misses the deadline to complete these courses within that period, the unstudied disciplines are transferred to **academic debt**.
+    *   Academic debt must be resolved on a **paid basis** [Source 4], [Source 5].
+*   **Application Process:** To manage leave status (including returning), students must submit an electronic application via the **Univer IS system** under the ""E-services"" section and provide required documents to the Student Office or Student Service Center ""Keremet"" [Source 6].
+
+*Note: The provided sources do not contain specific procedures for other types of problems (e.g., personal emergencies or disciplinary issues) beyond the context of returning from academic leave.*",Source 1: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 2: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 3: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en,,,,,,,,
+C013,ai_policy,multi_source,"Can students use generative AI tools for research, and what ethical restrictions or prohibited uses apply?",Baseline RAG,"Based on the provided context from Al-Farabi Kazakh National University, here are the rules regarding the use of generative AI tools for research:
+
+**Permitted Use and Requirements**
+*   **Approval Required:** The use of generative AI technologies in the preparation of qualifying papers and scientific research is allowed **only with the prior approval** of scientific consultants and the local ethical commission [Source 2, Source 4].
+*   **Independent Formulation:** While AI can be used, scientific results, provisions, recommendations, and conclusions must be formulated **independently by the author** [Source 1, Source 3].
+*   **Transparency and Disclosure:** Authors must explicitly reference the use of AI. This includes indicating the name, manufacturer (copyright holder), version, and date of application. The author must also describe:
+    *   At what stages of research the technology was applied.
+    *   How the technology was applied.
+    *   Methods used to verify the reliability of the data obtained and their processing/interpretations [Source 1, Source 4, Source 5].
+*   **Syllabus Description:** If AI systems are necessarily used in a specific discipline, all contexts and conditions for their use must be fully described in the discipline's syllabus [Source 1].
+
+**Prohibited Uses and Ethical Restrictions**
+*   **Plagiarism Evasion:** It is strictly **not allowed** to use generative AI (or other technical means) to reduce or eliminate the possibility of plagiarism detection [Source 1, Source 3].
+*   **Academic Integrity Violation:** Using generative AI without proper reference violates the principle of academic integrity. The lack of information regarding AI use is interpreted as the author confirming that no AI was used, which is a violation if AI was actually employed [Source 1, Source 3, Source 5].
+*   **Data Privacy:** The use of AI must comply with principles of confidentiality and protection of personal data. Teachers must inform students about data collection and how digital footprints are formed [Source 4].
+*   **Teacher Responsibilities:** Teachers are required to ensure transparency, inform students about AI usage and data processing, and provide opportunities for students to understand the algorithms and potential biases of the systems used [Source 2, Source 4].",Source 1: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en || Source 2: text | AI_Regulation_2024.pdf | page=11 || Source 3: text | AI_Regulation_2024.pdf | page=10,,,,,,,,
+C013,ai_policy,multi_source,"Can students use generative AI tools for research, and what ethical restrictions or prohibited uses apply?",Agentic RAG,"Based on the validated context, here are the answers regarding the use of generative AI tools for research at Al-Farabi Kazakh National University:
+
+**Allowed Uses**
+*   **General Learning:** Students can use AI to improve learning outcomes, manage time, search and organize information, create automated notes/summaries, and prepare for exams via practice tests.
+*   **Research Support:** Generative AI can help create digital materials for assignment answers. Virtual labs and AI-based simulators allow students to conduct experiments and research remotely.
+*   **Conditional Research Use:** The use of generative AI in preparing final qualifying papers and scientific research is **allowed only with prior approval** from scientific consultants and the local ethical commission [Source 2], [Source 3].
+
+**Ethical Restrictions and Prohibited Uses**
+*   **Prohibited for Plagiarism Evasion:** It is strictly forbidden to use generative AI to reduce or eliminate the possibility of plagiarism detection [Source 5], [Source 6].
+*   **Independent Formulation:** Scientific results, provisions, recommendations, and conclusions in final papers must be formulated **independently** by the author; AI cannot generate these final elements without human oversight [Source 6].
+*   **Mandatory Disclosure:** Authors must explicitly reference the use of AI in their work. This includes describing:
+    *   The stages of research where AI was applied.
+    *   The specific methods used to verify the reliability of AI-generated data and interpretations.
+    *   The name, manufacturer (copyright holder), version, and date of the AI tool used.
+    *   Failure to provide this information is considered a violation of academic integrity and confirms the author did not use AI [Source 2], [Source 5], [Source 6].
+*   **Fairness and Rights:** AI systems must not be used to create or distribute biased or discriminatory materials. Additionally, AI-generated material must not violate the rights of others, and all data used must be obtained and processed lawfully and ethically [Source 1].
+*   **Harmful Uses:** Using AI for purposes deemed harmful or unethical is strictly prohibited [Source 1].
+
+**Teacher Responsibilities**
+*   Teachers must ensure transparency by informing students about how AI is used, what data is collected, and how it is processed.
+*   Teachers should provide opportunities for students to understand AI algorithms and potential biases to foster critical thinking [Source 2], [Source 3].",Source 1: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en || Source 2: text | AI_Regulation_2024.pdf | page=11 || Source 3: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en,,,,,,,,
+C014,ai_policy,multi_source,"How can lecturers and students use AI technologies in education, and what competencies are expected from them?",Baseline RAG,"Based on the provided context, here is how lecturers and students can use AI technologies and the competencies expected from them at Al-Farabi Kazakh National University:
+
+**How Lecturers Can Use AI**
+Lecturers can utilize AI to enhance teaching effectiveness and quality by:
+*   **Automating Content Creation:** Generating relevant educational materials and test tasks based on the latest scientific data [Source 1, Source 4].
+*   **Creating Interactive Tools:** Developing interactive learning applications, simulators, chatbots, or digital doubles to answer students' questions [Source 1, Source 3].
+*   **Monitoring Performance:** Using AI analytical tools to track student performance, identify difficulties, and respond quickly [Source 1, Source 3].
+*   **Receiving Recommendations:** Utilizing AI systems to get suggestions for improving the educational process based on student feedback and academic performance analysis [Source 1, Source 3].
+*   **Supporting Academic Integrity:** Ensuring AI use supports integrity and prevents fraud or unethical practices [Source 2].
+
+**How Students Can Use AI**
+Students can use AI technologies to:
+*   **Conduct Research:** Perform experiments and research remotely and online using virtual labs and AI-based simulators [Source 4].
+*   **Prepare Assignments:** Utilize AI to assist in preparing answers to teacher assignments (as a supportive tool, not a replacement) [Source 4].
+
+**Expected Competencies**
+*   **For Lecturers:**
+    *   **Pedagogical Competence:** The ability to effectively explain technical aspects of AI to students with varying training levels [Source 5].
+    *   **Flexibility and Adaptability:** Readiness for continuous learning and adaptation to the rapidly developing field of AI [Source 5].
+    *   **Analytical Skills:** The ability to analyze specific situations and identify potential AI applications [Source 5].
+    *   **Interdisciplinary Approach:** The ability to integrate knowledge from fields such as computer science, mathematics, and psychology [Source 5].
+    *   **Ethical Consciousness:** Awareness and understanding of ethical issues related to AI use [Source 5].
+    *   **Support Role:** Ensuring accessibility and providing instructions, training materials, and advice for students using AI [Source 2].
+
+*   **For Students:**
+    *   **Basic Knowledge:** Possessing fundamental knowledge in the field of artificial intelligence and related technologies [Source 5].",Source 1: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en || Source 2: text | AI_Regulation_2024.pdf | page=11 || Source 3: text | AI_Regulation_2024.pdf | page=9,,,,,,,,
+C014,ai_policy,multi_source,"How can lecturers and students use AI technologies in education, and what competencies are expected from them?",Agentic RAG,"Based on the validated context from Al-Farabi Kazakh National University, here is how lecturers and students can use AI technologies and the competencies expected of them:
+
+### **Usage of AI Technologies**
+
+**For Lecturers:**
+*   **Content Creation:** Automate the creation and updating of educational materials, including generating relevant content and test tasks based on the latest scientific data [Source 1].
+*   **Interactive Tools:** Create interactive learning applications, simulators, chatbots, or digital doubles to answer students' questions [Source 1].
+*   **Performance Monitoring:** Use AI analytical tools to monitor student performance, identify difficulties, and respond quickly [Source 1].
+*   **Process Improvement:** Receive recommendations for improving the educational process based on the analysis of student feedback and academic performance [Source 1].
+*   **Support Role:** Use AI to support and complement traditional learning methods rather than replacing them [Source 6].
+*   **Accessibility:** Ensure accessibility and support for all students by providing instructions, training materials, and advice on effective technology use [Source 6].
+
+**For Students:**
+*   **Data Handling:** Collect, clean, and analyze data for use in AI systems [Source 2].
+*   **Research:** Apply AI in research while ensuring materials do not violate rights and data is processed lawfully and ethically [Source 5].
+*   **General Application:** Utilize AI technologies within the framework of university regulations, coordinating with course managers and supervisors when necessary [Source 2].
+
+### **Expected Competencies**
+
+**For Lecturers (University Staff):**
+*   **Technical Skills:** Understanding basic concepts and methods of artificial intelligence [Source 4], [Source 5].
+*   **Pedagogical Competence:** The ability to effectively explain technical aspects of AI to students with varying levels of training [Source 4], [Source 5].
+*   **Flexibility and Adaptability:** Readiness for continuous learning and adaptation to the rapidly developing field of AI, along with awareness of the latest developments [Source 4].
+*   **Analytical Skills:** The ability to analyze specific situations and identify potential applications of AI in various fields [Source 2].
+*   **Interdisciplinary Approach:** The ability to integrate knowledge from fields such as computer science, mathematics, and psychology [Source 2].
+*   **Ethical Consciousness:** Awareness and understanding of ethical issues related to AI use [Source 2].
+
+**For Students:**
+*   **Basic Knowledge:** Possess basic knowledge in the field of artificial intelligence and related technologies [Source 2].
+*   **Ethical Principles:** Understand and adhere to principles including respect for human rights, data privacy, and prevention of discrimination [Source 2].
+*   **Academic Integrity:** Know the rules of academic policy, integrity, and copyright; coordinate AI application with supervisors, especially regarding third-party data [Source 2].
+*   **Data Protection:** Possess methods for data protection to ensure confidentiality and integrity [Source 2].
+
+**General Ethical Requirements (Applicable to All):**
+*   Respect principles of fairness and inclusivity; avoid creating or distributing biased materials [Source 5].
+*   Ensure AI use supports academic integrity and prevents fraud [Source 6].
+*   Prohibit the use of AI for harmful or unethical purposes [Source 5].",Source 1: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en || Source 2: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en || Source 3: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en,,,,,,,,
+C015,ai_policy,multi_hop,"What does the university AI regulation say about chatbots, virtual assistants, and multi-agent systems?",Baseline RAG,"The provided context does not contain specific details regarding the university's AI regulation on chatbots, virtual assistants, or multi-agent systems.
+
+The available sources indicate that the **Regulation on the use of artificial intelligence technologies** defines:
+*   Basic concepts and organization procedures for AI implementation in educational programs at all levels (higher and postgraduate education) [Source 1, Source 5].
+*   Ethical norms, including respect for human rights, data privacy, and prevention of discrimination [Source 3].
+*   Requirements for students to understand academic policy, integrity, and copyright, and to coordinate AI application with course managers and supervisors [Source 3].
+*   Competencies such as data collection, cleaning, analysis, and protection methods [Source 3].
+*   Training in working with AI systems [Source 3].
+
+However, the text does not explicitly mention ""chatbots,"" ""virtual assistants,"" or ""multi-agent systems"" or provide specific rules governing their use.",Source 1: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en || Source 2: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en || Source 3: text | AI_Regulation_2024.pdf | page=13,,,,,,,,
+C015,ai_policy,multi_hop,"What does the university AI regulation say about chatbots, virtual assistants, and multi-agent systems?",Agentic RAG,"Based on the validated context, the Al-Farabi Kazakh National University AI Regulation addresses **multi-agent systems** specifically as a type of AI technology used at the university, while providing general ethical and procedural rules applicable to all AI technologies, including chatbots and virtual assistants.
+
+**Multi-Agent Systems**
+The regulation explicitly lists ""Multi-agent systems"" as a category of AI technology. It defines these systems in two ways:
+*   **Autonomous agents:** Systems where autonomous agents interact and coordinate their actions to achieve common goals.
+*   **Distributed computing:** Applications used for resource optimization, distributed learning of AI models, and management of distributed systems [Source 1].
+
+**General Rules for Chatbots and Virtual Assistants**
+While the text does not contain specific clauses exclusively for ""chatbots"" or ""virtual assistants,"" these systems fall under the general regulations for AI technology use. Key requirements include:
+*   **Ethical Principles:** Users must adhere to ethical principles, including respect for human rights, data privacy, and prevention of discrimination. AI systems must not be used to create or distribute biased or discriminatory materials [Source 2], [Source 4], [Source 6].
+*   **Academic Integrity:** The application of AI must be coordinated with course managers and academic supervisors, particularly if it affects third-party data or requires additional resources [Source 2], [Source 4].
+*   **Data Protection:** Users must possess data protection methods to ensure the confidentiality and integrity of data used in AI systems [Source 2], [Source 4].
+*   **Prohibited Use:** Using AI for purposes that may be harmful or unethical is strictly prohibited [Source 6].
+*   **Research Standards:** When using Generative AI (which includes many chatbots and assistants), users must ensure created materials do not violate others' rights and that all data was obtained and processed lawfully and ethically [Source 6].
+*   **Competencies:** Students and staff using these technologies must have basic knowledge of AI concepts, understand technical aspects, and be able to collect, clean, and analyze data [Source 2], [Source 4], [Source 6].
+
+The regulation also notes that the types of AI technologies used at the university can be supplemented and expanded depending on educational and administrative requirements [Source 1].",Source 1: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en || Source 2: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en || Source 3: text | AI_Regulation_2024.pdf | page=13,,,,,,,,
+C016,ai_policy,mixed_policy,"For a student using AI tools in academic work, what AI regulation rules apply and how might plagiarism checking during final attestation be relevant?",Baseline RAG,"Based on the provided context, the following AI regulation rules and plagiarism checking protocols apply to students at Al-Farabi Kazakh National University:
+
+**AI Regulation Rules for Students**
+*   **Academic Honesty and Citation:** Students must observe academic honesty when creating projects or research using AI. This includes avoiding plagiarism and properly quoting all sources and algorithms used [Source 1, 7.17; Source 5, 7.17].
+*   **Critical Evaluation:** Students are required to critically evaluate AI results rather than relying on them unconditionally. They must develop skills to analyze and verify data obtained through AI [Source 1, 7.16; Source 5, 7.16].
+*   **Prohibition of Deception:** Students must avoid using AI for fraud or deception [Source 1, page 12].
+*   **Privacy and Data Security:** Students must respect the confidentiality and personal data of colleagues, avoiding actions that violate privacy or lead to unauthorized access [Source 1, 7.15; Source 5, 7.15].
+*   **Fairness and Inclusivity:** AI systems should not be used to create or distribute biased or discriminatory materials [Source 1, 7.18; Source 5, 7.18].
+*   **Independent Formulation of Results:** For final qualifying papers and scientific research, scientific results, provisions, recommendations, and conclusions must be formulated independently by the author [Source 4, 6.1].
+*   **Proper Attribution:** Using generative AI without referencing the name, manufacturer (copyright holder), version, and date of application violates the principle of academic integrity [Source 4, 6.2].
+*   **Anti-Circumvention:** It is strictly forbidden to use technical means, including generative AI, to reduce or eliminate the possibility of plagiarism detection [Source 4, 6.3].
+*   **Syllabus Requirements:** If AI is necessary in a discipline, all contexts and conditions for its use must be fully described in the syllabus [Source 4, 5.15].
+
+**Relevance of Plagiarism Checking During Final Attestation**
+*   **Regulatory Framework:** The use of AI during final control is regulated by the current Rules for conducting exams, Rules for examination sessions with DOT, and Regulations on checking text documents for borrowings [Source 3, 5.12].
+*   **Consequences of Violation:**
+    *   If a student uses unauthorized aids (including improper AI use) during written online exams, their work will be thoroughly analyzed. The instructor will prepare an expert opinion to either annul the work or allow it for grading [Source 2].
+    *   If a student violates Final Examination Rules by using unauthorized aids, a grade of ""F"" is automatically assigned and cannot be appealed [Source 2].
+*   **Responsibility:** Responsibility for the results of AI use rests with both students and teachers, who must ensure the reliability of results obtained [Source 3, 5.14].",Source 1: text | AI_Regulation_2024.pdf | page=12 || Source 2: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 3: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en,,,,,,,,
+C016,ai_policy,mixed_policy,"For a student using AI tools in academic work, what AI regulation rules apply and how might plagiarism checking during final attestation be relevant?",Agentic RAG,"Based on the validated context, here are the AI regulation rules and the relevance of plagiarism checking for students at Al-Farabi Kazakh National University:
+
+### AI Regulation Rules for Academic Work
+Students must adhere to the following regulations when using AI tools:
+*   **Academic Integrity & Citation:** When using generative AI for final qualifying papers or research, scientific results must be formulated independently by the author [Source 5]. It is mandatory to reference AI usage by specifying the name, manufacturer, version, and date of application; failing to do so violates academic integrity [Source 5].
+*   **Prohibition of Evasion:** Students are strictly prohibited from using technical means or techniques, including generative AI, to reduce or eliminate the possibility of plagiarism detection [Source 5].
+*   **Critical Evaluation:** Students must critically evaluate AI results rather than relying on them unconditionally and must develop skills to verify data obtained through AI [Source 2].
+*   **Transparency:** Authors of final works must inform about AI usage by describing the stages of research where it was applied, the methods used, and how the reliability of the data was verified [Source 6].
+*   **Fairness & Objectivity:** If AI is used to assess knowledge, teachers and departments must guarantee fairness, and students/teachers share responsibility for the results, including understanding the technology's limitations [Source 1].
+*   **Privacy:** Students must respect the confidentiality and personal data of colleagues when working with AI systems [Source 2].
+*   **Syllabus Requirements:** If AI is necessary for a discipline, all conditions and contexts for its use must be fully described in the course syllabus [Source 5].
+
+### Relevance of Plagiarism Checking During Final Attestation
+Plagiarism checking is directly relevant to AI usage in the following ways:
+*   **Detection of Undisclosed AI Use:** The university utilizes regulations on verifying text documents for borrowings to detect instances where AI-generated content is presented as original work without proper citation [Source 1].
+*   **Consequences of Violation:** If a student uses unauthorized aids (including improper AI use) during final examinations, a grade of ""F"" is automatically assigned and cannot be appealed [Source 4].
+*   **Analysis of Written Work:** In cases of improper AI use during written online exams, the student's work undergoes thorough analysis. An instructor prepares an expert opinion to either annul the work or allow it for grading based on this analysis [Source 4].
+*   **Research Verification:** The use of AI in research is permitted only within limits established by internal regulations, which include specific rules for verifying students' text documents for plagiarism [Source 3].",Source 1: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en || Source 2: text | AI_Regulation_2024.pdf | page=12 || Source 3: text | Academic-policy_Академическая политика 2025-2026 (англ).pdf | page=16,,,,,,,,
+C017,ai_policy,missing_information,Does the AI regulation provide exact penalties for every prohibited use of generative AI?,Baseline RAG,"The provided context does not contain information regarding exact penalties for every prohibited use of generative AI.
+
+The documents outline specific prohibitions and requirements, such as:
+*   Violating academic integrity by using generative AI without proper reference (indicating name, manufacturer, version, and date) [Source 1, Source 2].
+*   Using AI to reduce or eliminate plagiarism detection possibilities [Source 1, Source 2, Source 4].
+*   Using AI to create biased or discriminatory materials [Source 3].
+*   Using AI for harmful or unethical purposes, which is strictly prohibited in accordance with University policy [Source 3].
+*   The author's responsibility for the ethical use of AI-obtained information and the requirement to inform about AI usage stages and verification methods [Source 4].
+
+However, none of the retrieved sources specify the exact sanctions or penalties associated with these violations.",Source 1: text | AI_Regulation_2024.pdf | page=10 || Source 2: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en || Source 3: text | AI_Regulation_2024.pdf | page=12,,,,,,,,
+C017,ai_policy,missing_information,Does the AI regulation provide exact penalties for every prohibited use of generative AI?,Agentic RAG,"Based on the provided validated context, the AI regulation at Al-Farabi Kazakh National University **does not** list exact penalties for every prohibited use of generative AI.
+
+The regulation outlines specific prohibited actions and ethical requirements, such as:
+*   Failing to reference the name, manufacturer, version, and date of AI use violates academic integrity [Source 1], [Source 2].
+*   Using AI to reduce or eliminate plagiarism detection is not allowed [Source 1], [Source 2], [Source 4].
+*   Using AI to create biased or discriminatory materials is prohibited [Source 3].
+*   Using AI for harmful or unethical purposes is strictly prohibited in accordance with University policy and international standards [Source 3].
+
+While the document states that the author is responsible for the reliable, safe, and ethical use of AI and must inform about its usage [Source 4], it does not specify the exact administrative or legal penalties associated with these violations.",Source 1: text | AI_Regulation_2024.pdf | page=10 || Source 2: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en || Source 3: text | AI_Regulation_2024.pdf | page=12,,,,,,,,
+C018,ai_policy,ambiguous,Can I use ChatGPT for my thesis?,Baseline RAG,"Based on the provided context, there is no explicit prohibition against using ChatGPT for a thesis at Al-Farabi Kazakh National University. However, strict rules regarding the disclosure and citation of Generative AI (Gen AI) apply:
+
+*   **Mandatory Disclosure:** If you use Gen AI (including tools like ChatGPT) to prepare answers or materials for your thesis, you **must explicitly inform your teacher**.
+*   **Citation Requirements:** You are required to indicate the names and references to the Gen AI used in the **list of references** or in the **description files** uploaded to digital platforms.
+*   **Context Description:** In addition to providing names and links, you must **describe the context** of how the AI was used.
+*   **Plagiarism Rules:** The university checks for plagiarism and ""technical detours"" to mask it. If evidence of plagiarism is found, measures are taken in accordance with the Policy of Academic Integrity, and works with masked plagiarism may be canceled.
+*   **Uniqueness Thresholds:** For a Bachelor thesis, the unique content must be at least **75%**; for a Master thesis, it must be at least **80%** (unless a specific faculty justification allows a reduction to no less than 70%).
+
+**Sources:**
+*   [Source 2: AI_Regulation_2024.pdf, page 10] regarding mandatory disclosure and citation of Gen AI.
+*   [Source 1: https://farabi.university/students/25?lang=en] regarding plagiarism detection and uniqueness thresholds.",Source 1: web_page | https://farabi.university/students/25?lang=en | url=https://farabi.university/students/25?lang=en || Source 2: text | AI_Regulation_2024.pdf | page=10 || Source 3: web_page | https://farabi.university/students/25?lang=en | url=https://farabi.university/students/25?lang=en,,,,,,,,
+C018,ai_policy,ambiguous,Can I use ChatGPT for my thesis?,Agentic RAG,"Based on the provided validated context, there is no specific information regarding the use of ChatGPT or other AI tools for writing a thesis at Al-Farabi Kazakh National University.
+
+The available sources strictly outline the following requirements and consequences related to thesis content:
+*   **Uniqueness Thresholds:** A Bachelor thesis must have at least 75% unique content, and a Master thesis must have at least 80% unique content to be allowed for defense [Source 1, Source 2].
+*   **Plagiarism and Technical Detours:** If evidence of plagiarism is found, measures are taken in accordance with the Policy of Academic Integrity. Specifically, if ""technical detours"" are detected to mask plagiarism, the student's written work is canceled [Source 2].
+*   **Verification:** The university uses the IS Univer 2.0 system to check for plagiarism, including attempts to disguise it, based on indicators like ""Borrowing,"" ""Citations,"" ""Originality,"" and ""Self-quoting"" [Source 2].
+
+Since the context does not explicitly mention AI-generated content or ChatGPT, it is not possible to confirm specific rules regarding its usage from these sources. However, given the strict penalties for plagiarism and attempts to mask it, any use of AI that results in non-unique content or disguised plagiarism would likely lead to the cancellation of the work.",Source 1: web_page | https://farabi.university/students/25?lang=en | url=https://farabi.university/students/25?lang=en || Source 2: web_page | https://farabi.university/students/25?lang=en | url=https://farabi.university/students/25?lang=en,,,,,,,,
+C019,admissions,multi_source,"What documents and procedures are mentioned for foreign students after admission, including visa invitation and medical requirements?",Baseline RAG,"After admission, foreign students must complete the following procedures and provide specific documents to obtain a study visa invitation and meet medical requirements:
+
+**Visa Invitation Procedures and Documents**
+To receive a one-year study visa invitation, students must submit the following to the University:
+*   **Admission Order:** An official order number confirming admission to the university [Source 1, Source 4, Source 5].
+*   **Tuition Payment:** Full payment (100%) of the total tuition amount to the university account [Source 4, Source 5].
+*   **Visa Fee:** Payment of approximately 2,500 tenge (0.5 MCI, approx. $6) [Source 4].
+*   **Application Form:** A completed visa application form in English or Russian (e.g., ""Application form (ENG, RUS) 2024.docx"") [Source 1, Source 4, Source 5].
+*   **Passport Copy:** A copy of the passport [Source 4, Source 5].
+*   **Additional Documents:** Specialists may request extra documents, such as a notarized copy of a resident card if the student is changing permanent residence [Source 4].
+
+**Medical Requirements**
+In accordance with Article 31 of the Law of the Republic of Kazakhstan ""On Migration of the Population,"" foreign students are required to:
+*   Provide a **medical certificate** confirming the absence of diseases that interfere with studies [Source 1].
+*   Undergo a **medical examination** for diseases listed in the Order of the Minister of Health of the Republic of Kazakhstan (dated September 30, 2011, No. ...), the presence of which prohibits entry into Kazakhstan [Source 1].
+*   Have valid **medical insurance** [Source 1].
+
+**Process Timeline**
+The University sends the invitation to enter the Republic of Kazakhstan once the enrollment order is signed and documents are ready. This process takes at least **14 days** after signing the order, so submitting documents early is recommended [Source 5].",Source 1: web_page | https://welcome.kaznu.kz/en/17999/page | url=https://welcome.kaznu.kz/en/17999/page || Source 2: web_page | https://welcome.kaznu.kz/en/27198/page | url=https://welcome.kaznu.kz/en/27198/page || Source 3: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en,,,,,,,,
+C019,admissions,multi_source,"What documents and procedures are mentioned for foreign students after admission, including visa invitation and medical requirements?",Agentic RAG,"Based on the validated context, here are the documents and procedures for foreign students after admission, specifically regarding visa invitations and medical requirements:
+
+### **Visa Invitation Process and Documents**
+To receive a one-year study visa invitation after successfully passing entrance exams and receiving an enrollment order, the following steps and documents are required [Source 2], [Source 4]:
+
+1.  **Enrollment Order**: You must possess the official order number for admission to the university.
+2.  **Tuition Payment**: 100% of the total tuition fees must be paid to the university account [Source 2], [Source 4], [Source 6].
+3.  **Visa Fee**: Pay the state fee, which is approximately 2,500 tenge (0.5 MCI, roughly $6) [Source 4].
+4.  **Application Form**: Fill out the visa application form (available in English or Russian) [Source 2], [Source 4].
+5.  **Passport Copy**: Submit a copy of your passport [Source 2], [Source 4].
+6.  **Additional Documents**: Specialists may request additional documents, such as a notarized copy of a resident card if changing permanent residence [Source 4].
+
+**Timeline**: The university sends the invitation to enter the Republic of Kazakhstan once it is ready. This process takes **at least 14 days** after signing the enrollment order [Source 2].
+
+### **Medical Requirements**
+Foreign students are required to undergo a medical examination and provide specific certificates to comply with the Law of the Republic of Kazakhstan ""On Migration of the Population"" [Source 1], [Source 6]:
+
+*   **Medical Certificate**: A certificate confirming the absence of diseases that interfere with studies is required [Source 1].
+*   **Prohibited Diseases**: Students must undergo an examination for diseases listed in the Order of the Minister of Health of the Republic of Kazakhstan (dated September 30, 2011, No. 100), the presence of which prohibits entry into Kazakhstan [Source 1].
+*   **Specific Forms**: Medical certificates must be issued in Kazakhstan and include:
+    *   Form No. 075-U [Source 6].
+    *   A copy of the preventive vaccination card [Source 6].
+    *   An AIDS test result [Source 6].
+*   **Issuance Location**: All medical certificates must be issued in Kazakhstan (e.g., at the Diagnostic Center of the Keremet University COS) [Source 6].
+
+### **Other Post-Admission Procedures**
+*   **Contract Signing**: The study contract is drawn up at the Office of Internationalization and Recruitment after passing entrance exams and the competition [Source 4].
+*   **Attendance Exceptions**: If a student misses classes due to medical reasons, a health certificate (form No. 037/у with QR-code) must be submitted to the faculty dean's office within 3 working days [Source 5].",Source 1: web_page | https://welcome.kaznu.kz/en/17999/page | url=https://welcome.kaznu.kz/en/17999/page || Source 2: web_page | https://welcome.kaznu.kz/en/18000/page | url=https://welcome.kaznu.kz/en/18000/page || Source 3: web_page | https://welcome.kaznu.kz/en/17999/page | url=https://welcome.kaznu.kz/en/17999/page,,,,,,,,
+C020,admissions,multi_source,"What additional costs are mentioned for foreign students besides tuition, including preparatory language course, medical certificate, HIV test, and visa fees?",Baseline RAG,"Based on the provided context, the additional costs for foreign students at Al-Farabi Kazakh National University besides tuition are:
+
+*   **Language Preparatory Course:** 670,000 KZT [Source 1, Source 5].
+*   **Medical Certificate and HIV (AIDS) Test:** From 4,500 KZT [Source 1, Source 5].
+*   **Visa Fee:** 2,000 KZT (0.5 MCR) [Source 1, Source 5].
+*   **Visa Extension Fee:** Approximately 83,340 KZT (30 MCR) [Source 1, Source 5].
+*   **Notarized Translation of Documents:** Approximately 10,000 KZT (about 25 USD) for education and passport documents [Source 3].
+
+Note: The use of books in the university library is free of charge [Source 3].",Source 1: table | TUITION_FEE_2022-2023.pdf | page=2 || Source 2: web_page | https://welcome.kaznu.kz/en/19388/page | url=https://welcome.kaznu.kz/en/19388/page || Source 3: web_page | https://welcome.kaznu.kz/en/19388/page | url=https://welcome.kaznu.kz/en/19388/page,,,,,,,,
+C020,admissions,multi_source,"What additional costs are mentioned for foreign students besides tuition, including preparatory language course, medical certificate, HIV test, and visa fees?",Agentic RAG,"Based on the validated context, here are the additional costs for foreign students at Al-Farabi Kazakh National University besides tuition fees:
+
+*   **Preparatory Language Course:** The tuition fee for the language preparatory course is **670,000 KZT** [Source 1], [Source 2].
+*   **Medical Certificate and HIV Test:** The cost for the medical certificate and HIV (AIDS) test is **from 4,500 KZT** [Source 1], [Source 2].
+*   **Visa Fees:**
+    *   Initial visa fee: **2,000 KZT** (0.5 MCR) [Source 1], [Source 2].
+    *   Visa extension fee: Approximately **83,340 KZT** (30 MCR) [Source 1], [Source 2].
+*   **Document Translation:** There is a cost for the notarized translation of education and passport documents, estimated at **about 10,000 KZT** (approx. 25 USD) [Source 3].
+
+Note: The use of books in the university library is free of charge [Source 3].",Source 1: text | TUITION_FEE_2022-2023.pdf | page=2 || Source 2: table | TUITION_FEE_2022-2023.pdf | page=2 || Source 3: web_page | https://welcome.kaznu.kz/en/19388/page | url=https://welcome.kaznu.kz/en/19388/page,,,,,,,,
+C021,admissions,missing_information,"Does the available source material provide all application deadlines for bachelor, master, and PhD foreign applicants?",Baseline RAG,"Based on the provided context, the available source material **does not** provide all specific application deadlines for bachelor, master, and PhD foreign applicants.
+
+The sources indicate the following regarding timing:
+*   **Frequency:** Admission for foreign citizens is conducted **twice a year** (summer enrollment and winter enrollment) [Source 4].
+*   **Determination of Terms:** The specific terms (dates) for these enrollments are **determined by the admission committee** based on relevant regulatory legal acts, rather than being listed as fixed dates in the provided text [Source 4].
+*   **Related Deadlines:** While specific deadlines for enrollment are not listed, the text does mention that ""Stay in another HPEIs"" under academic mobility must be issued no later than **10 days before the start of the corresponding semester** [Source 2], and internship deadlines are established according to the academic calendar [Source 5].
+
+Therefore, while the frequency of admission cycles is known, the exact calendar dates for application submission are not included in the retrieved context.",Source 1: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en || Source 2: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en || Source 3: web_page | https://welcome.kaznu.kz/en/17999/page | url=https://welcome.kaznu.kz/en/17999/page,,,,,,,,
+C021,admissions,missing_information,"Does the available source material provide all application deadlines for bachelor, master, and PhD foreign applicants?",Agentic RAG,"Based on the validated source material, the available documents **do not provide specific application deadlines** (dates) for Bachelor, Master, or PhD foreign applicants.
+
+The sources indicate the following regarding timing and enrollment:
+*   **Enrollment Frequency:** Admission for foreign citizens occurs **twice a year** (summer and winter enrollment), but the specific dates for these periods are not listed in the text [Source 4].
+*   **Determination of Terms:** The exact terms for summer and winter enrollment are determined by the admission committee based on relevant regulatory legal acts, rather than being fixed in this document [Source 4].
+*   **Specific Procedures:** While the text details the pre-selection procedure for Master's and Doctorate programs (involving an interview via Zoom) and document requirements, it does not specify the closing dates for applications [Source 1].
+*   **Visa Timing:** There is a mention that a medical certificate for a study visa must be submitted after the admission order is issued, but no specific deadline for the application itself is given [Source 6].
+
+Therefore, the available sources confirm the frequency of admissions but do not contain the specific calendar dates or deadlines for applying.",Source 1: web_page | https://welcome.kaznu.kz/en/27230/page | url=https://welcome.kaznu.kz/en/27230/page || Source 2: web_page | https://welcome.kaznu.kz/en/17999/page | url=https://welcome.kaznu.kz/en/17999/page || Source 3: web_page | https://farabi.university/students/19?lang=en | url=https://farabi.university/students/19?lang=en,,,,,,,,
+C022,admissions,ambiguous,What do I need to apply to KazNU as an international student?,Baseline RAG,"To apply to Al-Farabi Kazakh National University (KazNU) as an international student, you must follow these steps and provide the necessary documents:
+
+**1. Application Submission**
+*   **Online Form:** Complete the online application form on time via the official website: `https://univer.kaznu.kz/abiturient_user/register/11` [Source 3].
+*   **Applicant Number:** Obtain your applicant number through your account on the website `http://foreign.kaznu.kz/en` [Source 1].
+*   **Submission Methods:** Applications and documents can be submitted electronically to `international@kaznu.edu.kz` or in person. If submitting by proxy, the representative must be a close relative with a birth certificate, passport of the applicant, and passport of the relative [Source 3].
+
+**2. Specific Requirements for Certain Categories**
+*   **Indian Citizens:** Must provide a NEET certificate (National Eligibility cum Entrance Test). Minimum scores are 134 points for the General Category and 107 points for SC/ST/OBC categories [Source 1].
+*   **Language Proficiency:** Education is offered in Kazakh, Russian, and English. If you do not know one of these languages, you will be automatically enrolled in the preparatory faculty [Source 1].
+
+**3. Visa and Enrollment Process (Post-Acceptance)**
+*   **Visa Type:** All international students, except those from CIS countries, must obtain a C-9 student visa [Source 2].
+*   **Invitation Letter:** After passing entrance exams and receiving an enrollment order, you must request an invitation letter. This takes at least 10 working days to issue after signing the order [Source 2].
+*   **Documents for Visa Invitation:**
+    *   Order for admission to the university.
+    *   Payment of 100% of the total tuition fee.
+    *   Visa fee payment (approx. 2500 tenge / $6).
+    *   Completed Application form for Invitation (in English or Russian).
+    *   Copy of your passport.
+    *   Additional documents may be requested (e.g., notarized resident card) [Source 4].
+*   **Contract:** The study contract is drawn up at the Office of Internationalization and Recruitment after successfully passing entrance exams and the competition [Source 4, Source 5].
+*   **Arrival Notification:** Upon entering Kazakhstan, foreign citizens must notify the Office of Internationalization and Recruitment within 2 days, bringing copies of their passport, visa/TRP, and border crossing stamp [Source 5].
+
+For assistance with registration problems, contact `international@kaznu.kz` [Source 1].",Source 1: web_page | https://welcome.kaznu.kz/en/17999/page | url=https://welcome.kaznu.kz/en/17999/page || Source 2: web_page | https://welcome.kaznu.kz/en/27198/page | url=https://welcome.kaznu.kz/en/27198/page || Source 3: web_page | https://welcome.kaznu.kz/en/26873/page | url=https://welcome.kaznu.kz/en/26873/page,,,,,,,,
+C022,admissions,ambiguous,What do I need to apply to KazNU as an international student?,Agentic RAG,"To apply to Al-Farabi Kazakh National University (KazNU) as an international student, you need to complete the following steps and provide specific documents:
+
+**1. Application Submission**
+*   **Online Form:** Complete the online application form on time via your account on the official website: `http://foreign.kaznu.kz/en` [Source 2].
+*   **Alternative Submission:** You may also submit documents electronically to `international@kaznu.edu.kz` or through the official website `https://univer.kaznu.kz/abiturient_user/register/11` [Source 3].
+*   **Proxy Submission:** If submitting by proxy, the representative must be a close relative and provide a birth certificate, the applicant's passport, and the relative's passport [Source 3].
+
+**2. Admission Requirements**
+*   **Entrance Exams:** Successfully pass the entrance exams and the competition [Source 4].
+*   **Language Proficiency:** Education is offered in Kazakh, Russian, and English. If you do not know the language of instruction, you will be automatically enrolled in the preparatory faculty [Source 2].
+*   **Specific Requirements (Medicine):** Applicants to the Faculty of Medicine from India must provide a NEET certificate. Minimum scores are 134 points for the General Category and 107 points for SC/ST/OBC categories [Source 2].
+
+**3. Visa and Enrollment Documents**
+After receiving an admission order, you must obtain a C-9 student visa (unless you are a citizen of a CIS country). To receive the visa invitation, you must submit the following:
+*   An order for admission to the university [Source 4].
+*   Payment of **100%** of the total tuition fee to the university account [Source 4].
+*   Payment of the visa fee (approximately 2,500 tenge or ~6 USD) [Source 4].
+*   A filled-out Application form for Invitation (available in English or Russian) [Source 4].
+*   A copy of your passport [Source 4].
+*   Additional documents may be requested by specialists (e.g., notarized copy of a resident card if changing permanent residence) [Source 4].
+
+**4. Post-Arrival Procedures**
+*   **Notification:** Within **2 days** of crossing the border into Kazakhstan, you must notify the Office of Internationalization and Recruitment (CPS Keremet, ground floor, room 07) of your arrival.
+*   **Required Documents for Notification:** Bring copies of your passport, visa/TRP, and border crossing stamp. You must also have written confirmation of your residence address in Kazakhstan (e.g., lease agreement, hostel order, or property owner consent) [Source 5].",Source 1: web_page | https://welcome.kaznu.kz/en/27198/page | url=https://welcome.kaznu.kz/en/27198/page || Source 2: web_page | https://welcome.kaznu.kz/en/17999/page | url=https://welcome.kaznu.kz/en/17999/page || Source 3: web_page | https://welcome.kaznu.kz/en/26873/page | url=https://welcome.kaznu.kz/en/26873/page,,,,,,,,
+C023,admissions,multi_source,"What information is available for foreign applicants about admission documents, visa invitation, and arrival-related medical requirements?",Baseline RAG,"Based on the provided context, here is the information available for foreign applicants regarding admission documents, visa invitations, and medical requirements:
+
+**Visa Invitation Requirements**
+To receive a one-year study visa invitation, applicants must submit the following to the University:
+*   **Admission Order:** An official order for admission to the university.
+*   **Tuition Payment:** Full payment (100%) of the total tuition amount to the university account.
+*   **Visa Fee:** Payment of approximately 2,500 tenge (0.5 MCI, approx. $6).
+*   **Application Form:** A completed Application form for Invitation (available in English or Russian).
+*   **Passport:** A copy of the passport.
+*   **Additional Documents:** Specialists may request notarized copies of a resident card if the applicant is changing permanent residence.
+*   **Timing:** The invitation process takes at least 14 days after signing the enrollment order; early submission is recommended.
+
+**Medical Requirements**
+Foreign students are required to provide a medical certificate confirming the absence of diseases that interfere with studies and must have medical insurance. Additionally, they must undergo a medical examination for diseases listed in the Order of the Minister of Health of the Republic of Kazakhstan (dated September 30, 2011 No.), the presence of which prohibits entry into the country.
+
+**General Admission Documents**
+For initial admission, applicants must provide:
+*   **Original Documents:** Diploma or certificate (with apostille), transcript, and Nostrification or a certificate of submission for Nostrification.
+    *   *Note:* High school graduates need SSC and HSC certificates/mark sheets; those with a bachelor's or master's degree need their school certificate and mark sheets.
+*   **Notarized Translations:** Two copies each of notarized translations of the diploma, transcript, and passport into Russian or Kazakh.
+
+**Important Notes**
+*   Other visa forms received before enrollment cannot be changed to a study visa on the territory of Kazakhstan.
+*   Education is offered in Kazakh, Russian, and English; applicants not proficient in the chosen language are automatically enrolled in the preparatory faculty.
+*   For specific issues regarding registration, applicants can contact `international@kaznu.kz`.",Source 1: web_page | https://welcome.kaznu.kz/en/17999/page | url=https://welcome.kaznu.kz/en/17999/page || Source 2: web_page | https://welcome.kaznu.kz/en/27198/page | url=https://welcome.kaznu.kz/en/27198/page || Source 3: web_page | https://welcome.kaznu.kz/en/18000/page | url=https://welcome.kaznu.kz/en/18000/page,,,,,,,,
+C023,admissions,multi_source,"What information is available for foreign applicants about admission documents, visa invitation, and arrival-related medical requirements?",Agentic RAG,"Based on the validated context, here is the information for foreign applicants regarding admission documents, visa invitations, and medical requirements:
+
+**1. Admission Documents and Requirements**
+*   **General Requirements:** Applicants must complete an online form to obtain an applicant number via the website `http://foreign.kaznu.kz/en` [Source 1].
+*   **Specific Language Requirement:** If an applicant does not know the language of instruction (Kazakh, Russian, or English), they are automatically enrolled in the preparatory faculty [Source 1].
+*   **Medical Certificate:** Foreign students must provide a medical certificate confirming the absence of diseases that interfere with studies. This certificate must confirm the absence of diseases listed in the Order of the Minister of Health of the Republic of Kazakhstan dated September 30, 2011, No. [Source 1].
+*   **Special Case (India):** Citizens of India must provide a NEET certificate (National Eligibility cum Entrance Test) with a minimum score of 134 points for the General Category (107 for SC/ST/OBC) to enter the university [Source 1].
+
+**2. Visa Invitation Requirements**
+To receive a one-year study visa invitation, the following documents are required:
+*   **Admission Order:** An official order for admission to the university [Source 2], [Source 3], [Source 4].
+*   **Tuition Payment:** Full payment (100%) of the total tuition amount to the university account [Source 2], [Source 3], [Source 4].
+*   **Visa Fee:** Payment of approximately 2,500 tenge (0.5 MCI, approx. $6) [Source 2].
+*   **Application Form:** A completed Application form for Invitation (available in ENG or RUS) [Source 2], [Source 3].
+*   **Passport Copy:** A copy of the passport [Source 2], [Source 3].
+*   **Additional Documents:** Specialists may request additional documents, such as a notarized copy of a resident card if the applicant is changing permanent residence [Source 2].
+*   **Process Timeline:** The university issues the invitation at least 10 to 14 working days after signing the enrollment order [Source 3], [Source 4].
+*   **Visa Type:** All international students, except citizens of CIS countries, must obtain a C-9 student visa [Source 4].
+
+**3. Arrival-Related Medical and Registration Requirements**
+*   **Medical Insurance:** Foreign students are required to have medical insurance [Source 1].
+*   **Fingerprint and Genomic Registration:** From January 1, 2024, all foreign students must undergo fingerprint and genomic registration at the migration service department of the police department.
+    *   **Location:** UP Bostandyk district (Mynbaeva St., 53, corner of Klochkova street) or the government office for citizens of the Bostandyk region [Source 5].
+    *   **Outcome:** An appropriate certificate is issued, which must be provided to university visa center employees when applying for visa extensions or temporary residence permits [Source 5].
+*   **Temporary Residence Permit (TRP):** Citizens of CIS countries (Uzbekistan, Kyrgyzstan, Tajikistan, Russia, Azerbaijan, Belarus, Armenia) require specific documents for temporary registration, including the original passport and a copy of the passport [Source 5].
+
+For problems with registration, applicants are advised to contact `international@kaznu.kz` [Source 1].",Source 1: web_page | https://welcome.kaznu.kz/en/17999/page | url=https://welcome.kaznu.kz/en/17999/page || Source 2: web_page | https://welcome.kaznu.kz/en/27198/page | url=https://welcome.kaznu.kz/en/27198/page || Source 3: web_page | https://welcome.kaznu.kz/en/18000/page | url=https://welcome.kaznu.kz/en/18000/page,,,,,,,,
+C024,university_info,multi_source,What international cooperation activities and international organizations are associated with KazNU?,Baseline RAG,"Based on the provided context, the following international cooperation activities and organizations are associated with Al-Farabi Kazakh National University (KazNU):
+
+*   **Confucius Institute:** KazNU hosts a Confucius Institute, indicating cooperation with Chinese language and cultural initiatives [Source 1].
+*   **International Student Community:** The university actively engages with international students from various countries, including Shin Mingyog from the Republic of Korea (Faculty of International Relations) and Adriano Mastrorocco from Italy (Faculty of History, Archeology and Ethnology) [Source 2].
+*   **International Academic Staff:** The university employs international academic staff, as noted in its structural divisions [Source 3, Source 4].
+*   **International Agreements and Programs:** The university maintains a dedicated section for ""International cooperation"" which includes specific ""Agreements"" and ""Programs"" [Source 3, Source 4].
+*   **Representative Offices Abroad:** KazNU operates representative offices in foreign countries to facilitate international relations [Source 3, Source 4].
+*   **European Accreditation:** KazNU's international recognition is supported by the accreditation of over 85% of its educational programs by leading European agencies [Source 5].
+*   **Global Rankings:** The university participates in international ranking systems, including the Academic Ranking of World Universities (European Standard) and the IAAR 2024 ranking [Source 5].
+
+The provided sources do not list specific names of other international organizations beyond the Confucius Institute or detailed descriptions of specific cooperation activities beyond the existence of agreements and programs.",Source 1: table | Booklet_KazNU_2025.pdf | page=21 || Source 2: web_page | https://welcome.kaznu.kz/en/welcome/foreign | url=https://welcome.kaznu.kz/en/welcome/foreign || Source 3: web_page | https://farabi.university/students/24?lang=en | url=https://farabi.university/students/24?lang=en,,,,,,,,
+C024,university_info,multi_source,What international cooperation activities and international organizations are associated with KazNU?,Agentic RAG,"Based on the validated context, the following international cooperation activities and organizations are associated with Al-Farabi Kazakh National University (KazNU):
+
+**International Organizations and Affiliations**
+*   **UNESCO:** KazNU is associated with UNESCO regarding sustainable development, specifically listed under the Faculty of Geography and Environmental Sciences as ""ЮНЕСКО по устойчивому развитию"" (UNESCO on sustainable development) [Source 5].
+*   **European Accreditation Agencies:** The university's international recognition is provided through the accreditation of more than 85% of its educational programs by leading European agencies [Source 6].
+
+**International Cooperation Activities and Structures**
+*   **International Cooperation Department:** The university maintains a dedicated section for international cooperation which includes:
+    *   Agreements
+    *   Programs
+    *   International students
+    *   International academic staff
+    *   Academic mobility [Source 1], [Source 2], [Source 5].
+*   **Representative Offices Abroad:** KazNU operates representative offices located in foreign countries [Source 1], [Source 2], [Source 5].
+*   **International Projects:** The university engages in international projects, which are listed alongside research and innovative activities [Source 3], [Source 4].
+*   **Rankings and Recognition:** KazNU participates in international ranking systems, including:
+    *   Academic Ranking of World Universities (European Standard)
+    *   IAAR 2024
+    *   ""Kazakhstan 2050 - National rating for innovation and academic excellence""
+    *   NKAOKO (ranking of the best multidisciplinary universities in Kazakhstan) [Source 6].",Source 1: web_page | https://farabi.university/students/24?lang=en | url=https://farabi.university/students/24?lang=en || Source 2: web_page | https://farabi.university/students/35?lang=en | url=https://farabi.university/students/35?lang=en || Source 3: web_page | https://farabi.university/students/24?lang=en | url=https://farabi.university/students/24?lang=en,,,,,,,,
+C025,university_info,multi_source,What research projects and student startup companies are mentioned in the KazNU booklet?,Baseline RAG,"Based on the provided context, the following research projects, centers, and commercialization activities are mentioned in the KazNU booklet and related documents:
+
+**Research Centers and Projects**
+*   **Farabi Chem Hub Cluster:** A research center with a total equipment cost of $2.1 million. It includes laboratories for Analytical Chemistry and Environment, Electrochemical Production Technologies, Petrochemistry, Energy-Intensive Nanomaterials, Fine Organic Synthesis, Chemical and Medical applications, Advanced Materials and Technologies, and High-Precision Diagnostics of Materials.
+*   **Research and Production Center ""Chemical Coatings Innovations"":** A specific center listed under the Farabi Chem Hub Cluster.
+*   **General Research Activities:** The university engages in science projects with grant funding, industry projects, and doctoral student research, resulting in articles published in Q1 and Q2 journals.
+
+**Student Startup and Commercialization Activities**
+*   **Center for Technology Commercialization:** Listed as part of the university's innovative infrastructure.
+*   **Commercialization Metrics:** The booklet reports 15 commercialization projects with a total income of $6.4 million. This includes $1.5 million generated from the sale of finished goods.
+*   **Intellectual Property:** 3 patents have been obtained.
+*   **Farabi Hub:** Mentioned as a platform for innovative activities.
+
+**Sources:**
+*   Source 1: Mentions the ""Technological breakthrough via to digitalization, science and innovation"" national project.
+*   Source 3 & 4: List the ""Center for Technology Commercialization,"" ""Farabi Hub,"" and ""Council of Young Scientists"" under Research and Innovative activities.
+*   Source 5: Provides specific details on the Farabi Chem Hub Cluster, laboratory names, commercialization income ($6.4 mln), patents (3), and the Research and Production Center ""Chemical Coatings Innovations.""",Source 1: web_page | https://farabi.university/university/about?lang=en | url=https://farabi.university/university/about?lang=en || Source 2: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 3: web_page | https://farabi.university/students/24?lang=en | url=https://farabi.university/students/24?lang=en,,,,,,,,
+C025,university_info,multi_source,What research projects and student startup companies are mentioned in the KazNU booklet?,Agentic RAG,"Based on the validated context from the KazNU booklet, here are the details regarding research projects and student startup activities:
+
+**Research Projects**
+The booklet highlights several specific research initiatives and mega-projects:
+*   **Mega Projects:**
+    *   **Sustainable Development of Natural-Industrial and Socioeconomic Systems of the West Kazakhstan Region:** A comprehensive analysis and forecasting project with investments of **3.8 billion tenge** [Source 4].
+    *   **Development of Integrative Research in Neuroscience:** A project with investments of **4.8 million USD** [Source 4].
+    *   **Creation of a Large Language Model (LLM):** Aimed at maintaining the Kazakh language and increasing technological progress, with investments of **5 million USD** [Source 4].
+*   **Specific Research Areas and Projects:**
+    *   **Chemistry & Medicine:** Development and characterization of antibacterial coatings on surgical sutures and biomedical materials; development of antibacterial drugs against antibiotic-resistant pathogens in aquaculture [Source 4].
+    *   **Electronics & Education:** Creation of Educational Stands for Digital Electronics [Source 4].
+    *   **Biology & Agronomy:** General research in these fields is listed as an active area [Source 4].
+*   **Infrastructure and Clusters:**
+    *   **Farabi Chem Hub Cluster:** Includes laboratories for Analytical Chemistry, Electrochemical Production Technologies, Petrochemistry, Energy-Intensive Nanomaterials, Fine Organic Synthesis, Chemical and Medical applications, Advanced Materials, and High-Precision Diagnostics. The total cost of equipment is **2.1 million USD** [Source 4].
+    *   **Research and Production Center ""Chemical Coatings Innovations""** [Source 4].
+*   **General Statistics:**
+    *   The university reports **15 commercialization projects** and **3 patents obtained** [Source 4].
+    *   Scientific income is reported at **69.8 million USD**, with **1.5 million USD** generated from the sale of finished goods [Source 4].
+
+**Student Startup Companies**
+The provided validated context **does not mention specific names of student startup companies**.
+*   The document references the **Center for Technology Commercialization** and the **Farabi Hub** as entities involved in innovative activities and commercialization [Source 1], [Source 2].
+*   It lists ""Commercialization projects"" and ""Patents obtained"" but does not list individual student-founded companies [Source 4].
+
+Therefore, while the booklet details extensive research projects and infrastructure supporting innovation, it does not provide a list of specific student startup companies.",Source 1: web_page | https://farabi.university/students/24?lang=en | url=https://farabi.university/students/24?lang=en || Source 2: web_page | https://farabi.university/students/35?lang=en | url=https://farabi.university/students/35?lang=en || Source 3: web_page | https://farabi.university/university/about?lang=en | url=https://farabi.university/university/about?lang=en,,,,,,,,
+C026,university_info,multi_hop,"How does KazNU present its international position, research activity, and student innovation opportunities?",Baseline RAG,"KazNU presents its international position, research activity, and student innovation opportunities through the following aspects based on the provided context:
+
+**International Position and Research Activity**
+*   **Research University Status:** By a Government decree dated July 25, 2022, KazNU was granted the status of a research university, with a Development Program for 2022-2026 approved to align with state priorities and national projects like ""Technological breakthrough via to digitalization, science and innovation"" [Source 1].
+*   **Strategic Objectives:** The university aims to integrate scientific activity with the educational process, form an advanced model of education to provide academic leadership, and increase the contribution of its science to the country's socio-economic development [Source 1].
+*   **Global Recognition:** International students describe the university as having an ""ideal system"" and a ""very strong teaching staff,"" noting that the institution offers a ""new world of opportunities"" and a comfortable atmosphere for study and creativity [Source 4, Source 5].
+*   **Infrastructure:** The university supports research through specific infrastructure including a Dissertation council, Post-Doctoral studies, a Local ethical committee, and a Center for Technology Commercialization [Source 2, Source 3].
+
+**Student Innovation Opportunities**
+*   **Innovation Hubs and Centers:** Students have access to the ""FARABI HUB,"" the ""Center for Technology Commercialization,"" and the ""DIGITAL FARABI"" platform [Source 2, Source 3].
+*   **Scientific Engagement:** Opportunities for innovation include participation in the ""Council of Young Scientists,"" ""International Projects,"" and various ""Conferences"" [Source 2, Source 3].
+*   **Creative Atmosphere:** The university fosters an environment where students can engage in ""circles, sections"" that contribute to an atmosphere conducive to ""life, work, and creativity"" [Source 5].
+*   **Publications:** The university maintains channels for sharing research and news through ""AL-FARABI NEWS LETTERS"" and general ""PUBLICATIONS"" [Source 2, Source 3].",Source 1: web_page | https://farabi.university/university/about?lang=en | url=https://farabi.university/university/about?lang=en || Source 2: web_page | https://farabi.university/students/24?lang=en | url=https://farabi.university/students/24?lang=en || Source 3: web_page | https://farabi.university/students/35?lang=en | url=https://farabi.university/students/35?lang=en,,,,,,,,
+C026,university_info,multi_hop,"How does KazNU present its international position, research activity, and student innovation opportunities?",Agentic RAG,"KazNU presents its international position, research activity, and student innovation opportunities as follows:
+
+**International Position**
+KazNU holds a leading position in Central Asia and Kazakhstan, supported by international accreditation and rankings:
+*   **Accreditation:** More than 85% of its educational programs are accredited by leading European agencies [Source 5].
+*   **Global & Regional Rankings:** It holds the 1st place in the ""Academic Ranking of World Universities-European Standard ARES-2018"" among universities in Central Asia [Source 5].
+*   **National Leadership:** It ranks 1st in the ""IAAR 2024"" general ranking of top-20 universities in Kazakhstan and has held the 1st place in the ""NKAOKO 2018"" ranking of best multidisciplinary universities in Kazakhstan for ten years [Source 5].
+*   **Student Perspective:** International students note the strong teaching staff and the university's role in opening new opportunities for a stable future [Source 1], [Source 2].
+
+**Research Activity**
+KazNU operates as a research university with a strategic focus on integrating science with education and socio-economic development:
+*   **Status & Strategy:** By a Government decree in July 2022, KazNU was granted the status of a research university, with a Development Program (2022-2026) aligned with national projects like ""Technological breakthrough via to digitalization, science and innovation"" [Source 3].
+*   **Strategic Objectives:** The university aims to integrate scientific activity with education, form an advanced educational model, and increase science's contribution to the country's socio-economic development [Source 3].
+*   **Infrastructure & Support:** The university provides a robust scientific and innovative infrastructure, including a Dissertation council, Post-Doctoral studies, a Local ethical committee, and a Center for Technology Commercialization [Source 2], [Source 4].
+*   **Integration:** Research activities are designed to harmonize education content with leading foreign universities and meet international standards to enhance student competitiveness [Source 6].
+
+**Student Innovation Opportunities**
+The university fosters innovation through specific centers, councils, and educational programs:
+*   **Key Hubs:** Students have access to the **FARABI HUB** and the **Center for Technology Commercialization** to support innovative activities [Source 2], [Source 4].
+*   **Support Structures:** Innovation is supported by the **Council of Young Scientists**, **International Projects**, and the **DIGITAL FARABI** initiative [Source 2], [Source 4].
+*   **Curriculum & Competence:** The university has developed innovative educational programs that strengthen practical training and scientific components, ensuring students acquire professional competencies needed for local and international labor markets [Source 6].
+*   **Student Life:** Circles and sections contribute to an atmosphere of creativity, allowing students to engage in work and creativity alongside their studies [Source 1].",Source 1: web_page | https://welcome.kaznu.kz/en/welcome/foreign | url=https://welcome.kaznu.kz/en/welcome/foreign || Source 2: web_page | https://farabi.university/students/24?lang=en | url=https://farabi.university/students/24?lang=en || Source 3: web_page | https://farabi.university/university/about?lang=en | url=https://farabi.university/university/about?lang=en,,,,,,,,
+C027,noisy_retrieval,noisy_retrieval,"For medical requirements of foreign students, does the answer refer to health documents and insurance rather than Medicine and Healthcare tuition fees?",Baseline RAG,"Yes, the provided context distinguishes between medical requirements for foreign students and tuition fees for Medicine and Healthcare programs.
+
+**Medical Requirements for Foreign Students:**
+According to the university's admission guidelines, foreign students must provide specific health documents and insurance to receive a study visa [Source 1]. These requirements include:
+*   A **medical certificate** confirming the absence of diseases that interfere with studies.
+*   **Medical insurance**.
+*   Undergoing a **medical examination** for diseases listed in the Order of the Minister of Health of the Republic of Kazakhstan (dated September 30, 2011) that prohibit entry into the country [Source 1].
+
+**Medicine and Healthcare Tuition Fees:**
+The context provides specific tuition fee records for the 2022-2023 academic year for applicants from ""far_abroad"" regions studying in English, which are distinct from the medical entry requirements:
+*   **Bachelor's degree:** 1,900,000 KZT [Source 2].
+*   **Master's degree:** 2,347,000 KZT [Source 3].
+*   **PhD degree:** 2,804,000 KZT [Source 5].
+
+Therefore, the medical requirements refer to health documents and insurance for visa purposes, while the tuition fees refer to the cost of education for the Medicine and Healthcare faculty.",Source 1: web_page | https://welcome.kaznu.kz/en/17999/page | url=https://welcome.kaznu.kz/en/17999/page || Source 2: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 3: tuition_fee_fact | TUITION_FEE_2022-2023.pdf,,,,,,,,
+C027,noisy_retrieval,noisy_retrieval,"For medical requirements of foreign students, does the answer refer to health documents and insurance rather than Medicine and Healthcare tuition fees?",Agentic RAG,"Yes, the available sources distinguish between medical requirements and tuition fees for foreign students.
+
+**Medical Requirements (Health Documents and Insurance)**
+For foreign students, the university requires specific health documentation and insurance to process a study visa and for admission:
+*   **Medical Certificate:** A certificate confirming the absence of diseases that interfere with studies, as per Article 31 of the Law of the Republic of Kazakhstan ""On Migration of the Population"" [Source 1].
+*   **Medical Examination:** Foreign students must undergo an examination for diseases listed in the Order of the Minister of Health of the Republic of Kazakhstan dated September 30, 2011 No. [Source 1].
+*   **Specific Forms:** Admission documents include a Medical certificate form No. 075-U and a copy of the preventive vaccination card [Source 3].
+*   **Insurance:** Foreign students are required to have medical insurance [Source 1].
+*   **Important Note:** All medical certificates must be issued in Kazakhstan [Source 3].
+
+**Tuition Fees (Medicine and Healthcare)**
+The sources do not provide current tuition fees for Medicine and Healthcare for foreign students for the 2023-2024 or 2024-2025 academic years. The only structured records available are for the **2022-2023** academic year:
+*   **Master's Degree (English):** 2,347,000 KZT for applicants from far abroad [Source 4].
+*   **PhD Degree (English):** 2,804,000 KZT for applicants from far abroad [Source 5] and CIS [Source 6].
+
+Therefore, the information regarding ""medical requirements"" refers strictly to health documents and insurance, while tuition fees are listed separately and are only available for the 2022-2023 period.",Source 1: web_page | https://welcome.kaznu.kz/en/17999/page | url=https://welcome.kaznu.kz/en/17999/page || Source 2: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 3: web_page | https://welcome.kaznu.kz/en/27198/page | url=https://welcome.kaznu.kz/en/27198/page,,,,,,,,
+C028,noisy_retrieval,noisy_retrieval,"For Law bachelor tuition in English from far abroad, make sure the answer does not use Law master's, PhD, CIS, Russian, or Kazakh tuition records.",Baseline RAG,"The tuition fee for a Law bachelor's degree taught in English for applicants from far abroad for the 2022-2023 academic year is 1,900,000 KZT [Source 1].",Source 1: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 2: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 3: tuition_fee_fact | TUITION_FEE_2022-2023.pdf,,,,,,,,
+C028,noisy_retrieval,noisy_retrieval,"For Law bachelor tuition in English from far abroad, make sure the answer does not use Law master's, PhD, CIS, Russian, or Kazakh tuition records.",Agentic RAG,"Based on the validated context, the tuition fee for a **Law Bachelor** degree in **English** for applicants from **far abroad** for the academic year **2022-2023** is **1,900,000 KZT**.
+
+This figure is derived from the structured record which explicitly matches the criteria: applicant region = far_abroad, degree level = bachelor, language = english, and field = Law [Source 1]. The data excludes Master's, PhD, CIS, Russian, and Kazakh tuition records as requested.",Source 1: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 2: text | TUITION_FEE_2022-2023.pdf | page=1 || Source 3: table | TUITION_FEE_2022-2023.pdf | page=2,,,,,,,,
+C029,missing_information,missing_information,"Which exact scholarship amount is available for every foreign applicant category, and do the sources provide enough information to answer this completely?",Baseline RAG,"The provided sources do not contain information about specific scholarship amounts available for foreign applicants. The documents list tuition fees for History and International Relations degrees for far-abroad applicants in English for the 2022-2023 academic year, but they do not include any monetary values for scholarships [Source 1, Source 2, Source 3, Source 4]. While one source lists the names of various international fellowships and scholarships (such as ""POSCO Asia Fellowship"" and ""University of Tsukuba Scholarship""), it does not specify the exact amounts awarded for these programs [Source 5]. Therefore, the available sources do not provide enough information to answer the question completely regarding exact scholarship amounts.",Source 1: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 2: tuition_fee_fact | TUITION_FEE_2022-2023.pdf || Source 3: tuition_fee_fact | TUITION_FEE_2022-2023.pdf,,,,,,,,
+C029,missing_information,missing_information,"Which exact scholarship amount is available for every foreign applicant category, and do the sources provide enough information to answer this completely?",Agentic RAG,"Based on the provided validated context, the available sources **do not provide enough information** to answer your question completely.
+
+**Analysis of Scholarship Amounts:**
+*   The documents discuss admission criteria, required documents (diplomas, transcripts, notarized translations), and the use of international test scores (SAT, ACT, IB) for enrollment in paid departments [Source 1], [Source 2], [Source 3].
+*   There is **no mention** of specific scholarship amounts, financial aid categories, or monetary values for foreign applicants in any of the retrieved texts [Source 1], [Source 2], [Source 3], [Source 4].
+
+**Conclusion:**
+While the sources confirm that foreign citizens are admitted based on international entrance examinations and that those with specific test certificates (SAT, ACT, IB) are enrolled in paid departments, they do not list the exact scholarship amounts available for any applicant category. Therefore, the exact scholarship figures cannot be determined from the current information.",Source 1: web_page | https://welcome.kaznu.kz/en/26873/page | url=https://welcome.kaznu.kz/en/26873/page || Source 2: web_page | https://welcome.kaznu.kz/en/27198/page | url=https://welcome.kaznu.kz/en/27198/page || Source 3: web_page | https://welcome.kaznu.kz/en/17999/page | url=https://welcome.kaznu.kz/en/17999/page,,,,,,,,
+C030,mixed_policy,multi_source,"If a foreign student uses AI tools in thesis writing, what AI-use rules, plagiarism-checking rules, and final attestation requirements should they consider?",Baseline RAG,"Based on the provided context, foreign students using AI tools for thesis writing must adhere to the following rules regarding AI use, plagiarism detection, and final attestation:
+
+**AI-Use Rules**
+*   **Independent Formulation:** Scientific results, provisions, recommendations, and conclusions must be formulated by the author independently, even when generative AI is used [Source 1].
+*   **Critical Evaluation:** Students must critically evaluate AI results and not rely on them unconditionally; they must develop skills to analyze and verify data obtained via AI [Source 3].
+*   **Prohibition of Deception:** Students must avoid using AI for fraud or deception and must respect confidentiality and personal data [Source 3].
+*   **Fairness and Inclusivity:** AI systems should not be used to create or distribute biased content, and principles of fairness must be respected [Source 3].
+*   **Syllabus Requirements:** If AI is necessary for a discipline, all conditions for its use must be fully described in the syllabus [Source 1].
+*   **Responsibility:** The author is responsible for the reliable, safe, and ethical use of information obtained from AI and must familiarize themselves with the technology's limitations before use [Source 1, Source 4].
+
+**Plagiarism-Checking and Citation Rules**
+*   **Mandatory Disclosure:** The use of generative AI without referencing it (including name, manufacturer, version, and date) violates academic integrity [Source 1].
+*   **Detailed Description:** The author must inform about AI use by describing the stages of research where it was applied, how it was used, and the methods used to verify the reliability of the data [Source 1, Source 5].
+*   **Prohibition of Evasion:** It is strictly forbidden to use technical means or techniques, including generative AI, to reduce or eliminate the possibility of plagiarism detection [Source 1, Source 5].
+*   **Academic Honesty:** Students must observe academic honesty, avoid plagiarism, and properly quote all sources and algorithms used [Source 3].
+*   **Assessment Regulations:** The use of AI during final control is regulated by specific Rules for conducting exams and Regulations on checking text documents for borrowings [Source 4].
+
+**Final Attestation Requirements**
+*   **Verification of Reliability:** The author must describe the methods used for verifying the reliability of data obtained via AI and their processing/interpretations [Source 1, Source 5].
+*   **Consequences of Violation:**
+    *   If a student uses unauthorized aids (including improper AI use) during written online exams, the work will be thoroughly analyzed. An expert opinion will be prepared to either annul the work or allow it for grading [Source 2].
+    *   Violations of Final Examination Rules (e.g., using unauthorized aids) result in an automatic grade of ""F"" that cannot be appealed [Source 2].
+*   **Fairness in Assessment:** If AI is used to assess knowledge, teachers and departments must guarantee fairness and objectivity, with the possibility for teachers to review grades [Source 4].",Source 1: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en || Source 2: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 3: text | AI_Regulation_2024.pdf | page=12,,,,,,,,
+C030,mixed_policy,multi_source,"If a foreign student uses AI tools in thesis writing, what AI-use rules, plagiarism-checking rules, and final attestation requirements should they consider?",Agentic RAG,"Based on the validated context, here are the rules and requirements for foreign students regarding AI use, plagiarism, and final attestation at Al-Farabi Kazakh National University:
+
+### 1. AI-Use Rules
+*   **Independent Formulation:** When using generative AI for final qualifying papers or scientific research, the author must independently formulate scientific results, provisions, recommendations, and conclusions [Source 5].
+*   **Mandatory Citation:** Using generative AI without referencing it (including name, manufacturer, version, and date) violates academic integrity [Source 5].
+*   **Prohibited Actions:** It is forbidden to use AI to reduce or eliminate plagiarism detection capabilities [Source 5]. Students must avoid using AI for fraud or deception and must critically evaluate AI results rather than relying on them unconditionally [Source 6].
+*   **Syllabus Requirements:** If AI is necessary for a discipline, all conditions and contexts for its use must be fully described in the course syllabus [Source 5].
+*   **Responsibility:** Students and teachers share responsibility for AI results and must understand the technology's limitations before use [Source 1].
+
+### 2. Plagiarism-Checking Rules
+*   **System Verification:** Doctoral dissertations and standard written exams are checked via the ""System"" web resource (IS Univer 2.0).
+*   **Indicators Checked:** The system verifies reports based on ""Similarity,"" ""Citations,"" ""Originality,"" and ""Text recycling,"" specifically identifying attempts to disguise similarities [Source 3].
+*   **Scoring Consequences:**
+    *   If no violations are found, the examiner sets the final score based on the work's originality percentage.
+    *   If violations exist, the score is adjusted according to the originality percentage established in the System report [Source 3].
+*   **AI-Specific Violations:** Using AI to bypass plagiarism detection is explicitly prohibited [Source 5].
+
+### 3. Final Attestation Requirements
+*   **General Procedure:** Final attestation follows the academic calendar and approved curriculum, with forms and procedures approved by the Faculty Academic Council [Source 4].
+*   **Supervision:** Diploma works or projects must be supervised by teachers or specialists with at least 10 years of work experience in the relevant field [Source 4].
+*   **Assessment Forms:**
+    *   Undergraduates and doctoral students are certified by writing and defending a master's thesis/project or doctoral dissertation [Source 4].
+    *   Instructors may use AI as an auxiliary tool for designing assignments, but fairness and objectivity in assessment must be guaranteed [Source 2].
+*   **Violations and Penalties:**
+    *   Violating Final Examination Rules (e.g., using unauthorized aids or improper AI use) results in an automatic grade of **F**, which cannot be appealed [Source 2].
+    *   For written online exams involving improper AI use, the work is thoroughly analyzed. An expert opinion is prepared to either annul the work or allow it for grading [Source 2].",Source 1: web_page | https://farabi.university/students/34?lang=en | url=https://farabi.university/students/34?lang=en || Source 2: web_page | https://farabi.university/students/32?lang=en | url=https://farabi.university/students/32?lang=en || Source 3: web_page | https://farabi.university/students/25?lang=en | url=https://farabi.university/students/25?lang=en,,,,,,,,

@@ -58,6 +58,20 @@ The system also includes an adaptive RAG mode:
 
 This design avoids unnecessary agentic overhead for simple questions while preserving the benefits of query decomposition, source validation, source sufficiency scoring, and reflection for complex queries.
 
+## Human evaluation
+
+The project includes a human evaluation template for comparing Baseline RAG and Agentic RAG outputs on the same 30 complex questions. Reviewers can rate each answer using:
+
+- correctness
+- completeness
+- clarity
+- usefulness
+- trustworthiness
+- source transparency
+- observed hallucination
+
+This provides a small human-evaluation layer in addition to LLM-as-a-judge automatic evaluation.
+
 ### Main finding
 
 The Baseline RAG system performed strongly on direct and dataset-aligned questions. The Agentic RAG system provided additional transparency and control for complex questions by using:
