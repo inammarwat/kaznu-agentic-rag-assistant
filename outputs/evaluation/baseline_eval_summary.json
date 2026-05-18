@@ -1,0 +1,70 @@
+{
+  "total_evaluated": 50,
+  "overall": {
+    "avg_faithfulness_score": 4.94,
+    "avg_answer_relevance_score": 5,
+    "avg_context_relevance_score": 5,
+    "avg_completeness_score": 5,
+    "avg_citation_quality_score": 4.92,
+    "avg_hallucination_score": 4.96
+  },
+  "by_category": {
+    "academic_policy": {
+      "count": 15,
+      "avg_faithfulness_score": 5,
+      "avg_answer_relevance_score": 5,
+      "avg_context_relevance_score": 5,
+      "avg_completeness_score": 5,
+      "avg_citation_quality_score": 5,
+      "avg_hallucination_score": 5,
+      "hallucination_detected_count": 0,
+      "hallucination_rate": 0.0
+    },
+    "admissions": {
+      "count": 10,
+      "avg_faithfulness_score": 5,
+      "avg_answer_relevance_score": 5,
+      "avg_context_relevance_score": 5,
+      "avg_completeness_score": 5,
+      "avg_citation_quality_score": 5,
+      "avg_hallucination_score": 5,
+      "hallucination_detected_count": 0,
+      "hallucination_rate": 0.0
+    },
+    "ai_policy": {
+      "count": 10,
+      "avg_faithfulness_score": 4.8,
+      "avg_answer_relevance_score": 5,
+      "avg_context_relevance_score": 5,
+      "avg_completeness_score": 5,
+      "avg_citation_quality_score": 4.8,
+      "avg_hallucination_score": 4.9,
+      "hallucination_detected_count": 1,
+      "hallucination_rate": 0.1
+    },
+    "tuition": {
+      "count": 10,
+      "avg_faithfulness_score": 5,
+      "avg_answer_relevance_score": 5,
+      "avg_context_relevance_score": 5,
+      "avg_completeness_score": 5,
+      "avg_citation_quality_score": 5,
+      "avg_hallucination_score": 5,
+      "hallucination_detected_count": 0,
+      "hallucination_rate": 0.0
+    },
+    "university_info": {
+      "count": 5,
+      "avg_faithfulness_score": 4.8,
+      "avg_answer_relevance_score": 5,
+      "avg_context_relevance_score": 5,
+      "avg_completeness_score": 5,
+      "avg_citation_quality_score": 4.6,
+      "avg_hallucination_score": 4.8,
+      "hallucination_detected_count": 1,
+      "hallucination_rate": 0.2
+    }
+  },
+  "hallucination_detected_count": 2,
+  "hallucination_rate": 0.04
+}

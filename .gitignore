@@ -1,0 +1,41 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
+
+# Raw and intermediate data
+data/raw/pdfs/
+data/interim/
+data/vectorstore/
+
+# Large processed artifacts
+data/processed/*.jsonl
+data/processed/*.csv
+data/processed/*.parquet
+
+# Large experiment traces
+outputs/**/*.jsonl
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

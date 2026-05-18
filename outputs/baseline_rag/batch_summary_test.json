@@ -1,0 +1,9 @@
+{
+  "total_questions": 3,
+  "category_counts": {
+    "tuition": 3
+  },
+  "avg_latency_seconds": 1.047,
+  "min_latency_seconds": 0.364,
+  "max_latency_seconds": 1.522
+}

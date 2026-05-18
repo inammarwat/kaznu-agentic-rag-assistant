@@ -1,0 +1,103 @@
+{
+  "total_evaluated": 30,
+  "overall": {
+    "avg_faithfulness_score": 5,
+    "avg_answer_relevance_score": 5,
+    "avg_context_relevance_score": 5,
+    "avg_completeness_score": 5,
+    "avg_citation_quality_score": 5,
+    "avg_hallucination_score": 5
+  },
+  "by_category": {
+    "academic_policy": {
+      "count": 6,
+      "avg_faithfulness_score": 5,
+      "avg_answer_relevance_score": 5,
+      "avg_context_relevance_score": 5,
+      "avg_completeness_score": 5,
+      "avg_citation_quality_score": 5,
+      "avg_hallucination_score": 5,
+      "hallucination_detected_count": 0,
+      "hallucination_rate": 0.0
+    },
+    "admissions": {
+      "count": 5,
+      "avg_faithfulness_score": 5,
+      "avg_answer_relevance_score": 5,
+      "avg_context_relevance_score": 5,
+      "avg_completeness_score": 5,
+      "avg_citation_quality_score": 5,
+      "avg_hallucination_score": 5,
+      "hallucination_detected_count": 0,
+      "hallucination_rate": 0.0
+    },
+    "ai_policy": {
+      "count": 6,
+      "avg_faithfulness_score": 5,
+      "avg_answer_relevance_score": 5,
+      "avg_context_relevance_score": 5,
+      "avg_completeness_score": 5,
+      "avg_citation_quality_score": 5,
+      "avg_hallucination_score": 5,
+      "hallucination_detected_count": 0,
+      "hallucination_rate": 0.0
+    },
+    "missing_information": {
+      "count": 1,
+      "avg_faithfulness_score": 5,
+      "avg_answer_relevance_score": 5,
+      "avg_context_relevance_score": 5,
+      "avg_completeness_score": 5,
+      "avg_citation_quality_score": 5,
+      "avg_hallucination_score": 5,
+      "hallucination_detected_count": 0,
+      "hallucination_rate": 0.0
+    },
+    "mixed_policy": {
+      "count": 1,
+      "avg_faithfulness_score": 5,
+      "avg_answer_relevance_score": 5,
+      "avg_context_relevance_score": 5,
+      "avg_completeness_score": 5,
+      "avg_citation_quality_score": 5,
+      "avg_hallucination_score": 5,
+      "hallucination_detected_count": 0,
+      "hallucination_rate": 0.0
+    },
+    "noisy_retrieval": {
+      "count": 2,
+      "avg_faithfulness_score": 5,
+      "avg_answer_relevance_score": 5,
+      "avg_context_relevance_score": 5,
+      "avg_completeness_score": 5,
+      "avg_citation_quality_score": 5,
+      "avg_hallucination_score": 5,
+      "hallucination_detected_count": 0,
+      "hallucination_rate": 0.0
+    },
+    "tuition_admissions": {
+      "count": 6,
+      "avg_faithfulness_score": 5,
+      "avg_answer_relevance_score": 5,
+      "avg_context_relevance_score": 5,
+      "avg_completeness_score": 5,
+      "avg_citation_quality_score": 5,
+      "avg_hallucination_score": 5,
+      "hallucination_detected_count": 0,
+      "hallucination_rate": 0.0
+    },
+    "university_info": {
+      "count": 3,
+      "avg_faithfulness_score": 5,
+      "avg_answer_relevance_score": 5,
+      "avg_context_relevance_score": 5,
+      "avg_completeness_score": 5,
+      "avg_citation_quality_score": 5,
+      "avg_hallucination_score": 5,
+      "hallucination_detected_count": 0,
+      "hallucination_rate": 0.0
+    }
+  },
+  "hallucination_detected_count": 0,
+  "hallucination_rate": 0.0
+}

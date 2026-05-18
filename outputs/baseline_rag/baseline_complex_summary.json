@@ -1,0 +1,14 @@
+{
+  "total_questions": 15,
+  "category_counts": {
+    "tuition_admissions": 3,
+    "academic_policy": 4,
+    "ai_policy": 3,
+    "admissions": 2,
+    "university_info": 2,
+    "mixed_policy": 1
+  },
+  "avg_latency_seconds": 1.846,
+  "min_latency_seconds": 0.549,
+  "max_latency_seconds": 3.584
+}

@@ -1,0 +1,41 @@
+project:
+  name: "kaznu-agentic-rag"
+  language: "en"
+
+paths:
+  raw_pdf_dir: "data/raw/pdfs"
+  urls_file: "data/raw/urls.txt"
+  interim_html_dir: "data/interim/html"
+  interim_tables_dir: "data/interim/pdf_tables"
+  processed_docs_path: "data/processed/documents.jsonl"
+  processed_tables_path: "data/processed/tables.jsonl"
+  normalized_tuition_path: "data/processed/tuition_fees_normalized.jsonl"
+  chunks_path: "data/processed/chunks.jsonl"
+  chunk_report_path: "data/processed/chunk_report.json"
+  ingestion_report_path: "data/processed/ingestion_report.json"
+  vectorstore_dir: "data/vectorstore/chroma"
+  log_path: "logs/ingestion.log"
+
+ingestion:
+  request_timeout_seconds: 60
+  user_agent: "KazNU-Agentic-RAG-ResearchBot/1.0"
+  min_text_chars: 100
+
+chunking:
+  pdf_chunk_size: 900
+  pdf_chunk_overlap: 150
+  web_chunk_size: 1000
+  web_chunk_overlap: 200
+  table_chunk_size: 1000
+  table_chunk_overlap: 100
+  min_chunk_chars: 100
+
+embedding:
+  model_name: "BAAI/bge-small-en-v1.5"
+  device: "cpu"
+  normalize_embeddings: true
+
+vectorstore:
+  collection_name: "kaznu_rag_chunks"
+  batch_size: 64
+  reset_existing: true

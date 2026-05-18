@@ -1,0 +1,26 @@
+{
+  "total_evaluated": 3,
+  "overall": {
+    "avg_faithfulness_score": 5,
+    "avg_answer_relevance_score": 5,
+    "avg_context_relevance_score": 5,
+    "avg_completeness_score": 5,
+    "avg_citation_quality_score": 5,
+    "avg_hallucination_score": 5
+  },
+  "by_category": {
+    "tuition_admissions": {
+      "count": 3,
+      "avg_faithfulness_score": 5,
+      "avg_answer_relevance_score": 5,
+      "avg_context_relevance_score": 5,
+      "avg_completeness_score": 5,
+      "avg_citation_quality_score": 5,
+      "avg_hallucination_score": 5,
+      "hallucination_detected_count": 0,
+      "hallucination_rate": 0.0
+    }
+  },
+  "hallucination_detected_count": 0,
+  "hallucination_rate": 0.0
+}

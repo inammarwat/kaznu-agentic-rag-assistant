@@ -1,0 +1,252 @@
+[
+    {
+        "id": "Q001",
+        "category": "tuition",
+        "question": "What is the tuition fee for Law bachelor students from far abroad in English?"
+    },
+    {
+        "id": "Q002",
+        "category": "tuition",
+        "question": "What is the tuition fee for Information Technology bachelor students from CIS countries in English?"
+    },
+    {
+        "id": "Q003",
+        "category": "tuition",
+        "question": "How much do far abroad PhD students pay for Biology and Biotechnology in English?"
+    },
+    {
+        "id": "Q004",
+        "category": "tuition",
+        "question": "What is the tuition fee for Al-Farabi Business School master students from far abroad in Russian?"
+    },
+    {
+        "id": "Q005",
+        "category": "tuition",
+        "question": "What is the tuition fee for Chemistry and Chemical Technology bachelor students from CIS countries in Kazakh?"
+    },
+    {
+        "id": "Q006",
+        "category": "tuition",
+        "question": "What is the tuition fee for Journalism bachelor students from far abroad in English?"
+    },
+    {
+        "id": "Q007",
+        "category": "tuition",
+        "question": "What is the tuition fee for History master students from CIS countries in English?"
+    },
+    {
+        "id": "Q008",
+        "category": "tuition",
+        "question": "What is the tuition fee for Oriental Studies PhD students from far abroad in Russian?"
+    },
+    {
+        "id": "Q009",
+        "category": "tuition",
+        "question": "What is the tuition fee for Geography and Environmental Sciences bachelor students from CIS countries in Russian?"
+    },
+    {
+        "id": "Q010",
+        "category": "tuition",
+        "question": "What is the tuition fee for High School of Economics and Business bachelor students from far abroad in English?"
+    },
+    {
+        "id": "Q011",
+        "category": "admissions",
+        "question": "What documents are required for foreign applicants to apply to KazNU?"
+    },
+    {
+        "id": "Q012",
+        "category": "admissions",
+        "question": "How can foreign citizens apply for admission to Al-Farabi Kazakh National University?"
+    },
+    {
+        "id": "Q013",
+        "category": "admissions",
+        "question": "What educational programs are available for bachelor applicants?"
+    },
+    {
+        "id": "Q014",
+        "category": "admissions",
+        "question": "What educational programs are available for master's applicants?"
+    },
+    {
+        "id": "Q015",
+        "category": "admissions",
+        "question": "What educational programs are available for doctoral applicants?"
+    },
+    {
+        "id": "Q016",
+        "category": "admissions",
+        "question": "What information is provided for foreign applicants on the admissions website?"
+    },
+    {
+        "id": "Q017",
+        "category": "admissions",
+        "question": "Are there preparatory language courses for foreign students?"
+    },
+    {
+        "id": "Q018",
+        "category": "admissions",
+        "question": "What additional fees may foreign students need to pay besides tuition?"
+    },
+    {
+        "id": "Q019",
+        "category": "admissions",
+        "question": "What visa-related fees are mentioned for foreign students?"
+    },
+    {
+        "id": "Q020",
+        "category": "admissions",
+        "question": "How much is the language preparatory course tuition fee?"
+    },
+    {
+        "id": "Q021",
+        "category": "academic_policy",
+        "question": "How can a student apply for academic leave?"
+    },
+    {
+        "id": "Q022",
+        "category": "academic_policy",
+        "question": "For what reasons can academic leave be granted?"
+    },
+    {
+        "id": "Q023",
+        "category": "academic_policy",
+        "question": "What happens after a student returns from academic leave?"
+    },
+    {
+        "id": "Q024",
+        "category": "academic_policy",
+        "question": "How are academic differences handled after academic leave?"
+    },
+    {
+        "id": "Q025",
+        "category": "academic_policy",
+        "question": "What is academic mobility at the university?"
+    },
+    {
+        "id": "Q026",
+        "category": "academic_policy",
+        "question": "How are credits transferred after academic mobility?"
+    },
+    {
+        "id": "Q027",
+        "category": "academic_policy",
+        "question": "What should students do if they have academic debt after academic mobility?"
+    },
+    {
+        "id": "Q028",
+        "category": "academic_policy",
+        "question": "What are the requirements for final attestation?"
+    },
+    {
+        "id": "Q029",
+        "category": "academic_policy",
+        "question": "When are candidates for attestation commission chairpersons submitted and approved?"
+    },
+    {
+        "id": "Q030",
+        "category": "academic_policy",
+        "question": "What plagiarism checking rules apply to final attestation works?"
+    },
+    {
+        "id": "Q031",
+        "category": "academic_policy",
+        "question": "What are the requirements for master's thesis publication?"
+    },
+    {
+        "id": "Q032",
+        "category": "academic_policy",
+        "question": "How does the university support graduate employment?"
+    },
+    {
+        "id": "Q033",
+        "category": "academic_policy",
+        "question": "What is the role of the Office of Professional Development and Career?"
+    },
+    {
+        "id": "Q034",
+        "category": "academic_policy",
+        "question": "How is graduate distribution organized?"
+    },
+    {
+        "id": "Q035",
+        "category": "academic_policy",
+        "question": "What should a graduate do if they lose the Diploma Supplement?"
+    },
+    {
+        "id": "Q036",
+        "category": "ai_policy",
+        "question": "How can students use AI technologies in the educational process?"
+    },
+    {
+        "id": "Q037",
+        "category": "ai_policy",
+        "question": "How can lecturers use AI technologies in teaching?"
+    },
+    {
+        "id": "Q038",
+        "category": "ai_policy",
+        "question": "What AI technologies are mentioned in the university AI regulation?"
+    },
+    {
+        "id": "Q039",
+        "category": "ai_policy",
+        "question": "What does the AI regulation say about chatbots and virtual assistants?"
+    },
+    {
+        "id": "Q040",
+        "category": "ai_policy",
+        "question": "What are multi-agent systems according to the AI regulation?"
+    },
+    {
+        "id": "Q041",
+        "category": "ai_policy",
+        "question": "What ethical restrictions apply when using generative AI in research?"
+    },
+    {
+        "id": "Q042",
+        "category": "ai_policy",
+        "question": "What AI-related competencies should university staff have?"
+    },
+    {
+        "id": "Q043",
+        "category": "ai_policy",
+        "question": "What AI-related competencies should students have?"
+    },
+    {
+        "id": "Q044",
+        "category": "ai_policy",
+        "question": "What training does the university organize for AI technology use?"
+    },
+    {
+        "id": "Q045",
+        "category": "ai_policy",
+        "question": "What uses of AI are strictly prohibited?"
+    },
+    {
+        "id": "Q046",
+        "category": "university_info",
+        "question": "What international organizations is KazNU connected with?"
+    },
+    {
+        "id": "Q047",
+        "category": "university_info",
+        "question": "What research projects are mentioned in the KazNU booklet?"
+    },
+    {
+        "id": "Q048",
+        "category": "university_info",
+        "question": "What student startup companies are mentioned in the KazNU booklet?"
+    },
+    {
+        "id": "Q049",
+        "category": "university_info",
+        "question": "What are KazNU's international cooperation activities?"
+    },
+    {
+        "id": "Q050",
+        "category": "university_info",
+        "question": "What major historical milestones are mentioned for KazNU?"
+    }
+]

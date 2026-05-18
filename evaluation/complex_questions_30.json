@@ -1,0 +1,182 @@
+[
+    {
+        "id": "C001",
+        "category": "tuition_admissions",
+        "query_type": "multi_source",
+        "question": "If a foreign bachelor applicant from far abroad wants to study Law in English, what tuition fee applies, and what additional visa or medical fees are mentioned?"
+    },
+    {
+        "id": "C002",
+        "category": "tuition_admissions",
+        "query_type": "multi_source",
+        "question": "For an applicant from CIS countries interested in Information Technology bachelor studies in English, what tuition fee applies and what admission-related information is available?"
+    },
+    {
+        "id": "C003",
+        "category": "tuition_admissions",
+        "query_type": "multi_source",
+        "question": "If a foreign student wants to study Biology and Biotechnology in English as a PhD student, what tuition fee applies and what medical or insurance requirements are mentioned?"
+    },
+    {
+        "id": "C004",
+        "category": "tuition_admissions",
+        "query_type": "constraint_matching",
+        "question": "Compare the tuition fee for Law bachelor students from far abroad in English with Law bachelor students from CIS countries in English."
+    },
+    {
+        "id": "C005",
+        "category": "tuition_admissions",
+        "query_type": "constraint_matching",
+        "question": "What is the tuition fee difference between Information Technology bachelor students from far abroad and CIS countries when studying in English?"
+    },
+    {
+        "id": "C006",
+        "category": "tuition_admissions",
+        "query_type": "missing_information",
+        "question": "Does the available information provide the exact total cost for a foreign Law bachelor applicant including tuition, visa fee, medical certificate, HIV test, and insurance?"
+    },
+    {
+        "id": "C007",
+        "category": "academic_policy",
+        "query_type": "multi_hop",
+        "question": "If a student takes academic leave and later returns, how are they reinstated and how are academic differences handled?"
+    },
+    {
+        "id": "C008",
+        "category": "academic_policy",
+        "query_type": "multi_hop",
+        "question": "If a student participates in academic mobility and returns with academic debt, how are credits transferred and what should the student do?"
+    },
+    {
+        "id": "C009",
+        "category": "academic_policy",
+        "query_type": "multi_source",
+        "question": "What should a master's student know about thesis publication requirements, plagiarism checking, and final attestation?"
+    },
+    {
+        "id": "C010",
+        "category": "academic_policy",
+        "query_type": "multi_source",
+        "question": "How does the university support graduate employment, and what role does the Office of Professional Development and Career play?"
+    },
+    {
+        "id": "C011",
+        "category": "academic_policy",
+        "query_type": "missing_information",
+        "question": "Does the academic policy provide exact deadlines for every stage of final attestation, thesis publication, and plagiarism checking?"
+    },
+    {
+        "id": "C012",
+        "category": "academic_policy",
+        "query_type": "ambiguous",
+        "question": "What should a student do if they have problems after returning to study?"
+    },
+    {
+        "id": "C013",
+        "category": "ai_policy",
+        "query_type": "multi_source",
+        "question": "Can students use generative AI tools for research, and what ethical restrictions or prohibited uses apply?"
+    },
+    {
+        "id": "C014",
+        "category": "ai_policy",
+        "query_type": "multi_source",
+        "question": "How can lecturers and students use AI technologies in education, and what competencies are expected from them?"
+    },
+    {
+        "id": "C015",
+        "category": "ai_policy",
+        "query_type": "multi_hop",
+        "question": "What does the university AI regulation say about chatbots, virtual assistants, and multi-agent systems?"
+    },
+    {
+        "id": "C016",
+        "category": "ai_policy",
+        "query_type": "mixed_policy",
+        "question": "For a student using AI tools in academic work, what AI regulation rules apply and how might plagiarism checking during final attestation be relevant?"
+    },
+    {
+        "id": "C017",
+        "category": "ai_policy",
+        "query_type": "missing_information",
+        "question": "Does the AI regulation provide exact penalties for every prohibited use of generative AI?"
+    },
+    {
+        "id": "C018",
+        "category": "ai_policy",
+        "query_type": "ambiguous",
+        "question": "Can I use ChatGPT for my thesis?"
+    },
+    {
+        "id": "C019",
+        "category": "admissions",
+        "query_type": "multi_source",
+        "question": "What documents and procedures are mentioned for foreign students after admission, including visa invitation and medical requirements?"
+    },
+    {
+        "id": "C020",
+        "category": "admissions",
+        "query_type": "multi_source",
+        "question": "What additional costs are mentioned for foreign students besides tuition, including preparatory language course, medical certificate, HIV test, and visa fees?"
+    },
+    {
+        "id": "C021",
+        "category": "admissions",
+        "query_type": "missing_information",
+        "question": "Does the available source material provide all application deadlines for bachelor, master, and PhD foreign applicants?"
+    },
+    {
+        "id": "C022",
+        "category": "admissions",
+        "query_type": "ambiguous",
+        "question": "What do I need to apply to KazNU as an international student?"
+    },
+    {
+        "id": "C023",
+        "category": "admissions",
+        "query_type": "multi_source",
+        "question": "What information is available for foreign applicants about admission documents, visa invitation, and arrival-related medical requirements?"
+    },
+    {
+        "id": "C024",
+        "category": "university_info",
+        "query_type": "multi_source",
+        "question": "What international cooperation activities and international organizations are associated with KazNU?"
+    },
+    {
+        "id": "C025",
+        "category": "university_info",
+        "query_type": "multi_source",
+        "question": "What research projects and student startup companies are mentioned in the KazNU booklet?"
+    },
+    {
+        "id": "C026",
+        "category": "university_info",
+        "query_type": "multi_hop",
+        "question": "How does KazNU present its international position, research activity, and student innovation opportunities?"
+    },
+    {
+        "id": "C027",
+        "category": "noisy_retrieval",
+        "query_type": "noisy_retrieval",
+        "question": "For medical requirements of foreign students, does the answer refer to health documents and insurance rather than Medicine and Healthcare tuition fees?"
+    },
+    {
+        "id": "C028",
+        "category": "noisy_retrieval",
+        "query_type": "noisy_retrieval",
+        "question": "For Law bachelor tuition in English from far abroad, make sure the answer does not use Law master's, PhD, CIS, Russian, or Kazakh tuition records."
+    },
+    {
+        "id": "C029",
+        "category": "missing_information",
+        "query_type": "missing_information",
+        "question": "Which exact scholarship amount is available for every foreign applicant category, and do the sources provide enough information to answer this completely?"
+    },
+    {
+        "id": "C030",
+        "category": "mixed_policy",
+        "query_type": "multi_source",
+        "question": "If a foreign student uses AI tools in thesis writing, what AI-use rules, plagiarism-checking rules, and final attestation requirements should they consider?"
+    }
+]

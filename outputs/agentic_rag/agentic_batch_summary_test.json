@@ -1,0 +1,24 @@
+{
+  "total_questions": 2,
+  "successful_questions": 2,
+  "failed_questions": 0,
+  "error_rate": 0.0,
+  "category_counts": {
+    "tuition_admissions": 2
+  },
+  "by_category": {
+    "tuition_admissions": {
+      "count": 2,
+      "avg_latency_seconds": 2.19,
+      "min_latency_seconds": 1.999,
+      "max_latency_seconds": 2.381
+    }
+  },
+  "avg_latency_seconds": 2.19,
+  "min_latency_seconds": 1.999,
+  "max_latency_seconds": 2.381,
+  "complex_questions_detected": 2,
+  "avg_subqueries_per_question": 3.5,
+  "avg_validated_sources_per_question": 2.0,
+  "avg_rejected_sources_per_question": 6.0
+}

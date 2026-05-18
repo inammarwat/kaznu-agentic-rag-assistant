@@ -1,0 +1,77 @@
+[
+    {
+        "id": "A001",
+        "category": "tuition_admissions",
+        "question": "If a foreign bachelor applicant from far abroad wants to study Law in English, what tuition fee applies, and what additional visa or medical fees are mentioned?"
+    },
+    {
+        "id": "A002",
+        "category": "tuition_admissions",
+        "question": "For an applicant from CIS countries interested in Information Technology bachelor studies in English, what tuition fee applies and what admission-related information is available?"
+    },
+    {
+        "id": "A003",
+        "category": "tuition_admissions",
+        "question": "If a foreign student wants to study Biology and Biotechnology in English as a PhD student, what tuition fee applies and what medical or insurance requirements are mentioned?"
+    },
+    {
+        "id": "A004",
+        "category": "academic_policy",
+        "question": "If a student takes academic leave and later returns, how are they reinstated and how are academic differences handled?"
+    },
+    {
+        "id": "A005",
+        "category": "academic_policy",
+        "question": "If a student participates in academic mobility and returns with academic debt, how are credits transferred and what should the student do?"
+    },
+    {
+        "id": "A006",
+        "category": "academic_policy",
+        "question": "What should a master's student know about thesis publication requirements, plagiarism checking, and final attestation?"
+    },
+    {
+        "id": "A007",
+        "category": "academic_policy",
+        "question": "How does the university support graduate employment, and what role does the Office of Professional Development and Career play?"
+    },
+    {
+        "id": "A008",
+        "category": "ai_policy",
+        "question": "Can students use generative AI tools for research, and what ethical restrictions or prohibited uses apply?"
+    },
+    {
+        "id": "A009",
+        "category": "ai_policy",
+        "question": "How can lecturers and students use AI technologies in education, and what competencies are expected from them?"
+    },
+    {
+        "id": "A010",
+        "category": "ai_policy",
+        "question": "What does the university AI regulation say about chatbots, virtual assistants, and multi-agent systems?"
+    },
+    {
+        "id": "A011",
+        "category": "admissions",
+        "question": "What documents and procedures are mentioned for foreign students after admission, including visa invitation and medical requirements?"
+    },
+    {
+        "id": "A012",
+        "category": "admissions",
+        "question": "What additional costs are mentioned for foreign students besides tuition, including preparatory language course, medical certificate, HIV test, and visa fees?"
+    },
+    {
+        "id": "A013",
+        "category": "university_info",
+        "question": "What international cooperation activities and international organizations are associated with KazNU?"
+    },
+    {
+        "id": "A014",
+        "category": "university_info",
+        "question": "What research projects and student startup companies are mentioned in the KazNU booklet?"
+    },
+    {
+        "id": "A015",
+        "category": "mixed_policy",
+        "question": "For a student using AI tools in academic work, what AI regulation rules apply and how might plagiarism checking during final attestation be relevant?"
+    }
+]

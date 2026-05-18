@@ -1,0 +1,49 @@
+# Core data processing
+pandas
+numpy
+PyYAML
+
+# PDF processing
+pypdf
+pdfplumber
+pymupdf
+
+# Web scraping
+beautifulsoup4
+requests
+trafilatura
+
+# LangChain core
+langchain
+langchain-community
+langchain-openai
+langchain-text-splitters
+
+# Vector Store & Embeddings
+langchain-chroma
+langchain-huggingface
+sentence-transformers>=3.0.1
+transformers>=4.41.0
+huggingface-hub>=0.23.0
+
+# LLM Integration
+langchain-google-genai
+google-generativeai
+groq
+langchain-groq
+
+# Utilities
+python-dotenv
+tqdm
+ipykernel
+tabulate
+pytest
+
+# Visualization
+matplotlib
+seaborn
+
+# Table extraction dependencies (add these)
+camelot-py      # For advanced table extraction (optional)
+tabula-py       # For Java-based table extraction (optional)
+opencv-python   # Required for camelot image processing

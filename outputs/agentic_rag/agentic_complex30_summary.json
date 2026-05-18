@@ -1,0 +1,73 @@
+{
+  "total_questions": 30,
+  "successful_questions": 30,
+  "failed_questions": 0,
+  "error_rate": 0.0,
+  "category_counts": {
+    "tuition_admissions": 6,
+    "academic_policy": 6,
+    "ai_policy": 6,
+    "admissions": 5,
+    "university_info": 3,
+    "noisy_retrieval": 2,
+    "missing_information": 1,
+    "mixed_policy": 1
+  },
+  "by_category": {
+    "tuition_admissions": {
+      "count": 6,
+      "avg_latency_seconds": 2.2,
+      "min_latency_seconds": 1.447,
+      "max_latency_seconds": 3.598
+    },
+    "academic_policy": {
+      "count": 6,
+      "avg_latency_seconds": 3.296,
+      "min_latency_seconds": 2.17,
+      "max_latency_seconds": 4.547
+    },
+    "ai_policy": {
+      "count": 6,
+      "avg_latency_seconds": 3.409,
+      "min_latency_seconds": 1.818,
+      "max_latency_seconds": 4.932
+    },
+    "admissions": {
+      "count": 5,
+      "avg_latency_seconds": 3.775,
+      "min_latency_seconds": 2.027,
+      "max_latency_seconds": 5.442
+    },
+    "university_info": {
+      "count": 3,
+      "avg_latency_seconds": 3.734,
+      "min_latency_seconds": 2.723,
+      "max_latency_seconds": 4.486
+    },
+    "noisy_retrieval": {
+      "count": 2,
+      "avg_latency_seconds": 2.676,
+      "min_latency_seconds": 2.0,
+      "max_latency_seconds": 3.352
+    },
+    "missing_information": {
+      "count": 1,
+      "avg_latency_seconds": 2.084,
+      "min_latency_seconds": 2.084,
+      "max_latency_seconds": 2.084
+    },
+    "mixed_policy": {
+      "count": 1,
+      "avg_latency_seconds": 5.048,
+      "min_latency_seconds": 5.048,
+      "max_latency_seconds": 5.048
+    }
+  },
+  "avg_latency_seconds": 3.2,
+  "min_latency_seconds": 1.447,
+  "max_latency_seconds": 5.442,
+  "complex_questions_detected": 25,
+  "avg_subqueries_per_question": 3.467,
+  "avg_validated_sources_per_question": 4.833,
+  "avg_rejected_sources_per_question": 2.033
+}
