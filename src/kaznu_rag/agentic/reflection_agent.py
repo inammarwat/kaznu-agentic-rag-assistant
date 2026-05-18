@@ -161,7 +161,7 @@ def normalize_reflection(parsed: Dict[str, Any]) -> Dict[str, Any]:
 
     if (
         faithfulness_score < 5
-        or completeness_score < 5
+        or completeness_score <= 3
         or unsupported_claims
     ):
         answer_is_acceptable = False
