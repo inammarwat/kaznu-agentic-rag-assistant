@@ -159,8 +159,15 @@ def normalize_reflection(parsed: Dict[str, Any]) -> Dict[str, Any]:
 
     answer_is_acceptable = bool(parsed.get("answer_is_acceptable", False))
 
-    if faithfulness_score < 5 or unsupported_claims:
+    if (
+        faithfulness_score < 5
+        or completeness_score < 5
+        or unsupported_claims
+    ):
         answer_is_acceptable = False
+
+    # if faithfulness_score < 5 or unsupported_claims:
+    #     answer_is_acceptable = False
 
     return {
         "answer_is_acceptable": answer_is_acceptable,
@@ -224,8 +231,12 @@ def critique_answer(
             "faithfulness_score": 1,
             "completeness_score": 1,
             "missing_answer_parts": [],
-            "unsupported_claims": ["Reflection agent failed to parse or evaluate the answer."],
-            "revision_instructions": "Rewrite the answer conservatively using only validated context.",
+            "unsupported_claims": [
+                "Reflection agent failed to parse or evaluate the answer."
+            ],
+            "revision_instructions": (
+                "Rewrite the answer conservatively using only validated context."
+            ),
             "short_reason": str(exc),
             "reflection_method": "fallback",
         }

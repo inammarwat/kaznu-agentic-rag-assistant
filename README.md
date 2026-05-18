@@ -29,11 +29,47 @@ The system processes university-related PDFs and web pages, builds a vector data
 
 The stable Qwen/KazNU-based experiment includes:
 
-- Baseline RAG on 50 simple queries
 - Baseline RAG on 30 complex queries
 - Agentic RAG on the same 30 complex queries
 - Evaluation metrics: faithfulness, relevance, completeness, citation quality, hallucination score, and latency
 - PNG plots for presentation
+
+
+## Evaluation design
+
+The project uses two evaluation settings:
+
+1. **General Baseline RAG evaluation**
+   - Baseline RAG was evaluated on 50 dataset-aligned university information questions.
+   - This setting measures the performance of a standard RAG pipeline on direct university information queries.
+
+2. **Controlled complex-query comparison**
+   - Baseline RAG and Agentic RAG were both evaluated on the same 30 complex multi-part questions.
+   - This setting measures behavior on multi-source, ambiguous, missing-information, noisy-retrieval, tuition, admissions, academic-policy, AI-policy, and mixed-policy questions.
+
+The experimental interpretation is that Baseline RAG is efficient and strong for direct questions, while Agentic RAG provides additional transparency and control for complex questions through query decomposition, multi-query retrieval, source validation, source sufficiency scoring, reflection, and rejected-source tracking.
+
+## Adaptive routing
+
+The system also includes an adaptive RAG mode:
+
+- Simple single-intent questions are routed to Baseline RAG.
+- Complex, multi-source, ambiguous, or missing-information questions are routed to Agentic RAG.
+
+This design avoids unnecessary agentic overhead for simple questions while preserving the benefits of query decomposition, source validation, source sufficiency scoring, and reflection for complex queries.
+
+### Main finding
+
+The Baseline RAG system performed strongly on direct and dataset-aligned questions. The Agentic RAG system provided additional transparency and control for complex questions by using:
+
+- query decomposition
+- multi-query retrieval
+- source validation
+- source sufficiency scoring
+- reflection/critique
+- rejected-source tracking
+
+The Agentic RAG workflow improves explainability and hallucination control, but introduces additional latency due to extra reasoning and validation steps.
 
 ## Security note
 
