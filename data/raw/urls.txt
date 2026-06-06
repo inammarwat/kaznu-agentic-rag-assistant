@@ -1,0 +1,35 @@
+# Student Domain URLs (15)
+https://farabi.university/students?lang=en
+https://farabi.university/students/17?lang=en
+https://farabi.university/students/19?lang=en
+https://farabi.university/students/20?lang=en
+https://farabi.university/students/22?lang=en
+https://farabi.university/students/23?lang=en
+https://farabi.university/students/24?lang=en
+https://farabi.university/students/25?lang=en
+https://farabi.university/students/30?lang=en
+https://farabi.university/students/31?lang=en
+https://farabi.university/students/32?lang=en
+https://farabi.university/students/33?lang=en
+https://farabi.university/students/34?lang=en
+https://farabi.university/students/35?lang=en
+https://farabi.university/students/keremet/18?lang=en
+
+# Foreign Applicant Domain URLs (12)
+https://welcome.kaznu.kz/en/welcome/foreign
+https://welcome.kaznu.kz/en/17999/page
+https://welcome.kaznu.kz/en/26873/page
+https://welcome.kaznu.kz/en/27198/page
+https://welcome.kaznu.kz/en/17998/page
+https://welcome.kaznu.kz/en/education_programs/bachelor/
+https://welcome.kaznu.kz/en/education_programs/magistracy/
+https://welcome.kaznu.kz/en/education_programs/doctorate/
+https://welcome.kaznu.kz/en/19388/page
+https://welcome.kaznu.kz/en/19389/page
+https://welcome.kaznu.kz/en/18000/page
+https://welcome.kaznu.kz/en/27230/page
+
+
+#University Intro Domain URLs (2)
+https://farabi.university/university/about?lang=en
+https://welcome.kaznu.kz/en/

@@ -1,0 +1,13 @@
+system,category,count,avg_faithfulness_score,avg_answer_relevance_score,avg_context_relevance_score,avg_completeness_score,avg_citation_quality_score,avg_hallucination_score,hallucination_detected_count,hallucination_rate,avg_latency_seconds,min_latency_seconds,max_latency_seconds
+Baseline RAG,academic_policy,4,5,5,5,5,5,5,0,0.0,,,
+Baseline RAG,admissions,2,5,5,5,5,5,5,0,0.0,,,
+Baseline RAG,ai_policy,3,5,5,5,5,5,5,0,0.0,,,
+Baseline RAG,mixed_policy,1,5,5,5,5,5,5,0,0.0,,,
+Baseline RAG,tuition_admissions,3,5,5,5,5,5,5,0,0.0,,,
+Baseline RAG,university_info,2,5,5,5,5,5,5,0,0.0,,,
+Agentic RAG,academic_policy,4,5,5,5,5,5,5,0,0.0,3.28,2.657,3.927
+Agentic RAG,admissions,2,5,5,5,5,5,5,0,0.0,3.639,2.542,4.736
+Agentic RAG,ai_policy,3,5,5,5,5,5,5,0,0.0,3.677,3.347,4.251
+Agentic RAG,mixed_policy,1,5,5,5,5,5,5,0,0.0,4.213,4.213,4.213
+Agentic RAG,tuition_admissions,3,5,5,5,5,5,5,0,0.0,1.865,1.411,2.106
+Agentic RAG,university_info,2,5,5,5,5,5,5,0,0.0,2.963,2.725,3.2

@@ -1,0 +1,23 @@
+{
+  "total_chunks": 1026,
+  "by_source_type": {
+    "pdf": 308,
+    "web": 436,
+    "structured": 282
+  },
+  "by_content_type": {
+    "text": 266,
+    "table": 42,
+    "web_page": 436,
+    "tuition_fee_fact": 282
+  },
+  "by_chunk_strategy": {
+    "pdf_recursive_character_split": 266,
+    "table_recursive_split": 42,
+    "web_recursive_character_split": 436,
+    "structured_fact_as_single_chunk": 282
+  },
+  "min_chunk_chars": 113,
+  "max_chunk_chars": 1000,
+  "avg_chunk_chars": 634.63
+}

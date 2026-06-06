@@ -1,0 +1,75 @@
+digraph KazNU_Agentic_RAG_Methodology {
+	nodesep=0.4 rankdir=TB ranksep=0.6 splines=ortho
+	fontsize=18 label="Methodology Architecture of the Proposed Agentic RAG System" labelloc=t
+	node [color=black fillcolor=lightgoldenrodyellow fontsize=11 shape=box style="rounded,filled"]
+	A1 [label="PDF Sources
+(Academic Policy, Booklet,
+Tuition Fee, AI Regulation)"]
+	A2 [label="Web URL Sources
+(29 university webpages)"]
+	B [label="Data Ingestion Pipeline
+PDF text extraction
+Web content extraction
+Table extraction"]
+	C [label="Preprocessing and Cleaning
+text cleaning
+whitespace normalization
+noise removal"]
+	D [label="Tuition Table Normalization
+faculty
+applicant region
+degree level
+language
+academic year
+fee"]
+	E [label="Chunking and Metadata Enrichment
+PDF chunks
+Web chunks
+Table chunks
+Structured fact chunks"]
+	F [label="Embedding Generation
+BAAI/bge-small-en-v1.5"]
+	G [label="Vector Database
+ChromaDB"]
+	H [label="Baseline RAG
+single-query retrieval
+top-k search
+LLM answer generation"]
+	I [label="Agentic RAG
+query decomposition
+multi-query retrieval
+rank fusion
+source validation"]
+	J [label="P1 Extension
+source sufficiency scoring
+reflection / critique
+answer revision"]
+	K [label="Adaptive Routing
+simple query → Baseline RAG
+complex query → Agentic RAG"]
+	L [label="Evaluation Framework
+LLM-as-a-judge
+human evaluation template
+comparison reports
+PNG figures"]
+	M [label="Final Outputs
+answers with citations
+metrics
+reports
+graphs"]
+	A1 -> B
+	A2 -> B
+	B -> C
+	B -> D
+	C -> E
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+	G -> I
+	I -> J
+	H -> K
+	J -> K
+	K -> L
+	L -> M
+}

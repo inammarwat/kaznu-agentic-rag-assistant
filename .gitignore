@@ -39,3 +39,27 @@ outputs/**/*.jsonl
 Thumbs.db
 .vscode/
 .idea/
+# Thesis evidence packages - local only
+chapter3_implementation_results_evidence/
+chapter3_implementation_results_evidence.zip
+thesis_appendices_evidence/
+thesis_appendices_evidence.zip
+introduction_evidence/
+introduction_evidence.zip
+
+# One-off generated answer files
+outputs/baseline_rag/baseline_rag_*.json
+outputs/agentic_rag/agentic_rag_*.json
+
+# Heavy/generated result traces
+outputs/**/*.jsonl
+
+# Processed heavy datasets
+data/processed/*.jsonl
+data/interim/
+data/raw/pdfs/
+data/vectorstore/
+
+# Cache
+.pytest_cache/
+__pycache__/

@@ -1,0 +1,104 @@
+{
+  "pdf_files_found": 4,
+  "web_urls_found": 29,
+  "records_total": 114,
+  "pdf_text_records": 74,
+  "pdf_table_records": 11,
+  "web_records": 29,
+  "tables_extracted_count": 11,
+  "tables_extracted": [
+    {
+      "table_id": "Academic-policy_Академическая политика 2025-2026 (англ)_p14_t2",
+      "source_name": "Academic-policy_Академическая политика 2025-2026 (англ).pdf",
+      "page_number": 14,
+      "csv_path": "data\\interim\\pdf_tables\\Academic-policy_Академическая политика 2025-2026 (англ)_p14_t2.csv",
+      "rows": 7,
+      "columns": 3
+    },
+    {
+      "table_id": "Academic-policy_Академическая политика 2025-2026 (англ)_p15_t1",
+      "source_name": "Academic-policy_Академическая политика 2025-2026 (англ).pdf",
+      "page_number": 15,
+      "csv_path": "data\\interim\\pdf_tables\\Academic-policy_Академическая политика 2025-2026 (англ)_p15_t1.csv",
+      "rows": 6,
+      "columns": 3
+    },
+    {
+      "table_id": "Academic-policy_Академическая политика 2025-2026 (англ)_p18_t2",
+      "source_name": "Academic-policy_Академическая политика 2025-2026 (англ).pdf",
+      "page_number": 18,
+      "csv_path": "data\\interim\\pdf_tables\\Academic-policy_Академическая политика 2025-2026 (англ)_p18_t2.csv",
+      "rows": 8,
+      "columns": 4
+    },
+    {
+      "table_id": "Academic-policy_Академическая политика 2025-2026 (англ)_p19_t1",
+      "source_name": "Academic-policy_Академическая политика 2025-2026 (англ).pdf",
+      "page_number": 19,
+      "csv_path": "data\\interim\\pdf_tables\\Academic-policy_Академическая политика 2025-2026 (англ)_p19_t1.csv",
+      "rows": 7,
+      "columns": 7
+    },
+    {
+      "table_id": "Booklet_KazNU_2025_p14_t1",
+      "source_name": "Booklet_KazNU_2025.pdf",
+      "page_number": 14,
+      "csv_path": "data\\interim\\pdf_tables\\Booklet_KazNU_2025_p14_t1.csv",
+      "rows": 8,
+      "columns": 6
+    },
+    {
+      "table_id": "Booklet_KazNU_2025_p14_t2",
+      "source_name": "Booklet_KazNU_2025.pdf",
+      "page_number": 14,
+      "csv_path": "data\\interim\\pdf_tables\\Booklet_KazNU_2025_p14_t2.csv",
+      "rows": 7,
+      "columns": 2
+    },
+    {
+      "table_id": "Booklet_KazNU_2025_p21_t1",
+      "source_name": "Booklet_KazNU_2025.pdf",
+      "page_number": 21,
+      "csv_path": "data\\interim\\pdf_tables\\Booklet_KazNU_2025_p21_t1.csv",
+      "rows": 4,
+      "columns": 3
+    },
+    {
+      "table_id": "TUITION_FEE_2022-2023_p1_t1",
+      "source_name": "TUITION_FEE_2022-2023.pdf",
+      "page_number": 1,
+      "csv_path": "data\\interim\\pdf_tables\\TUITION_FEE_2022-2023_p1_t1.csv",
+      "rows": 4,
+      "columns": 1
+    },
+    {
+      "table_id": "TUITION_FEE_2022-2023_p1_t2",
+      "source_name": "TUITION_FEE_2022-2023.pdf",
+      "page_number": 1,
+      "csv_path": "data\\interim\\pdf_tables\\TUITION_FEE_2022-2023_p1_t2.csv",
+      "rows": 17,
+      "columns": 20
+    },
+    {
+      "table_id": "TUITION_FEE_2022-2023_p2_t1",
+      "source_name": "TUITION_FEE_2022-2023.pdf",
+      "page_number": 2,
+      "csv_path": "data\\interim\\pdf_tables\\TUITION_FEE_2022-2023_p2_t1.csv",
+      "rows": 3,
+      "columns": 20
+    },
+    {
+      "table_id": "TUITION_FEE_2022-2023_p2_t2",
+      "source_name": "TUITION_FEE_2022-2023.pdf",
+      "page_number": 2,
+      "csv_path": "data\\interim\\pdf_tables\\TUITION_FEE_2022-2023_p2_t2.csv",
+      "rows": 7,
+      "columns": 2
+    }
+  ],
+  "outputs": {
+    "documents_jsonl": "data\\processed\\documents.jsonl",
+    "tables_jsonl": "data\\processed\\tables.jsonl",
+    "ingestion_report": "data\\processed\\ingestion_report.json"
+  }
+}
