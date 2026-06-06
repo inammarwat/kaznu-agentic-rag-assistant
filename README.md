@@ -37,45 +37,18 @@ The current implementation focuses on English-language university information so
 
 The system is modular and can be extended later with additional PDFs, URLs, Kazakh/Russian multilingual support, and a frontend interface.
 
-## System Architecture
+## Methodology and Architecture
 
-```mermaid
-flowchart TD
-    A[Raw Data Sources] --> B[Data Ingestion]
-    A1[PDF Files] --> B
-    A2[Web URLs] --> B
+The following figure presents the overall methodology and system architecture of the **KazNU Agentic RAG Assistant**, including data ingestion, preprocessing, chunking, embedding and storage, Baseline RAG, Agentic RAG, adaptive routing, evaluation, and system outputs.
 
-    B --> C[Text Cleaning and Preprocessing]
-    C --> D[Table Extraction and Normalization]
-    D --> E[Structured Tuition Facts]
+<p align="center">
+  <img src="docs/images/kaznu_agentic_rag_architecture.svg" alt="KazNU Agentic RAG Assistant Methodology and Architecture" width="100%">
+</p>
 
-    C --> F[Chunking and Metadata Enrichment]
-    E --> F
+<p align="center">
+  <em>Figure: KazNU Agentic RAG Assistant — Methodology and Architecture</em>
+</p>
 
-    F --> G[Embedding Generation]
-    G --> H[Chroma Vector Store]
-
-    H --> I[Baseline RAG]
-    H --> J[Agentic RAG]
-
-    I --> K[Single Query Retrieval]
-    K --> L[LLM Answer Generation]
-
-    J --> M[Query Decomposition]
-    M --> N[Multi-Query Retrieval]
-    N --> O[Reciprocal-Rank Fusion]
-    O --> P[Source Validation]
-    P --> Q[Source Sufficiency Scoring]
-    Q --> R[Reflection/Critique Agent]
-    R --> S[Final Grounded Answer]
-
-    L --> T[Evaluation]
-    S --> T
-
-    T --> U[LLM-as-a-Judge Metrics]
-    T --> V[Human Evaluation Template]
-    T --> W[Comparison Reports and PNG Graphs]
-```
 ## Main components
 
 - PDF and web data ingestion
